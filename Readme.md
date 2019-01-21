@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Dmitry Kovalkov](https://up.htmlacademy.ru/htmlcss/24/user/890537).
-* Наставник: [Алексей Пудников]
+* Наставник: [Алексей Пудников](https://github.com/alexey-pd)
 
 ---
 
