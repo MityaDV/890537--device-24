@@ -6,7 +6,119 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="header">
+      <nav class="navigation container">
+        <a class="header-logo">
+          <img src="img/logo.svg" width="165" height="35" alt="Магазин «Девайс»">
+        </a>
+        <div class="header-form">
+          <p class="btn btn-search">Поиск по сайту</p>
+          <!-- Здесь будет форма -->
+          <!-- поменять на поле ввода, после занятия по формам -->
+        </div>
+        <ul class="header-actions">
+          <li>
+            <a class="header-actions-link header-actions-enter" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="header-actions-link header-actions-compare" href="#">Сравнить</a>
+          </li>
+          <li>
+            <a class="header-actions-link header-actions-order" href="#">Корзина</a>
+          </li>
+        </ul>
+        <ul class="site-navigation">
+          <li class="site-navigation-item site-navigation-catalog">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-navigation-item site-navigation-delivery">
+            <a class="site-navigation-item site-navigation-active" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item site-navigation-warranty">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="site-navigation-item site-navigation-contacts">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>	
+
+  	<main>
+  		<h1 class="title visually-hidden">Магазин «Девайс»</h1>
+  		<section class="info contacts">
+        <div class="container">
+          <h2 class="title title-accent">О нас</h2>
+          <p class="info">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="info-list">
+            <li class="info-item">Деловые Линии</li>
+            <li class="info-item">Автотрейдинг</li>
+            <li class="info-item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="btn btn-info-active" href="#">Подробнее о нас</a>
+
+          <h2 class="title title-accent">Контакты</h2>
+          <p class="info">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="contacts contacts-actions-link" href="map.html">
+            <img src="img/map.jpg" width="564" height="225" alt="Наш адрес на карте">
+          </a>
+          <a class="btn btn-contacts-active" href="#">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+ 
+  	<footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-content footer-left-column">
+            <a class="footer-logo footer-logo-active">
+              <img src="img/logo.svg" width="165" height="35" alt="Магазин «Девайс»">
+            </a>
+            <p>г. Москва, ул. Строителей, 15</p>
+          </div>
+          <div class="footer-content footer-center-column">
+            <ul class="site-navigation">
+              <li class="site-navigation-item site-navigation-delivery">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="site-navigation-item site-navigation-warranty">
+                <a href="#">Гарантия</a>
+              </li>
+              <li class="site-navigation-item site-navigation-contacts">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer-social">
+              <li>
+                <a class="btn social-btn-fb" href="#">Фейсбук</a>
+              </li>
+              <li>
+                <a class="btn social-btn-in" href="#">Инстаграм</a>
+              </li>
+              <li>
+                <a class="btn social-btn-tv" href="#">Твиттер</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content footer-right-column">
+            <ul class="footer-actions">
+              <li>
+                <a class="footer-actions-link footer-actions-enter" href="#">Войти</a>
+              </li>
+              <li>
+                <a class="footer-actions-link footer-actions-compare" href="#">Сравнить</a>
+              </li>
+              <li>
+                <a class="footer-actions-link footer-actions-order" href="#">Корзина</a>
+              </li>
+            </ul>
+            <p>Тел.: +7 (495) 495-95-95</p>
+            <span><a class="btn btn-html-academy" href="https://htmlacademy.ru">HTML Academy</a></span>
+          </div>
+        </div>
+      </div>
+   	</footer>
 
   </body>
 </html>
