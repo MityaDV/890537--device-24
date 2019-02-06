@@ -254,6 +254,19 @@ a {
 	opacity: 0.3;
 }
 
+.specification-filters-title {
+	background-color: #dcdcdc;
+}
+
+.specification-sorting-title {
+	background-color: #ebebeb;
+}
+
+.specification-options {
+	background-color: #efefef;
+}
+
+.specification-options-price legend,
 .specification-options-colors legend,
 .specification-options-bt legend {
 	font-family: "Gilroy ExtraBold", sans-serif;
@@ -284,6 +297,79 @@ a {
 	line-height: 24px;
 	color: #464646;
 }
+
+.specification-filters-title h2,
+.specification-sorting-title h2 {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.specification-sorting-list {
+	list-style: none;
+}
+
+.specification-sorting-item a {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.specification-sorting-list li:first-child a {
+	opacity: 1;
+}
+
+.specification-sorting-up {
+	opacity: 0.2;
+}
+.catalog-buy-list,
+.catalog-pagination-list {
+	list-style: none;
+}
+
+
+
+.btn-catalog-order,
+.btn-catalog-compare {
+	border: none;
+	background-color: transparent;
+}
+
+.btn-catalog-order::before {
+	content:"";
+	background-size: 200px 8px;
+	background-color: #f0c52e;
+}
+
+.btn-catalog-order:hover {
+	background-color: #f0c52e;
+}
+
+.btn-catalog-order:active {
+	opacity: 0.3;
+}
+
+.btn-catalog-compare {
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.26px;
+	text-transform: unset;
+	opacity: 0.5;
+}
+
+.btn-catalog-compare:hover {
+	opacity: 1;
+} 
+
+.btn-catalog-compare:active {
+	opacity: 0.2;
+} 
 
 /*Стили футера*/
 
