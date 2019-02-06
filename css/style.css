@@ -1,0 +1,607 @@
+@font-face {
+		font-family: 'gilroyextrabold';
+		src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+				 url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+		font-weight: 800;
+		font-style: normal;
+}
+@font-face {
+		font-family: 'gilroylight';
+		src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
+				 url('../fonts/gilroylight-webfont.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", Tahoma, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	letter-spacing: 0.15px;
+	color: #464646;
+
+	background-color: #ffffff;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Стили для Хедера*/
+
+.navigation {
+	color: #000000;
+
+	background-color: #f7e296;
+}
+
+.header-form input {
+	font: inherit;
+
+	background-color: #f7e296;
+	border: none;
+	opacity: 0.3;
+}
+
+.header-logo:hover,
+.header-form input:hover,
+.header-actions a:hover,
+.site-navigation a:hover,
+.catalog-menu-list a:hover {
+	opacity: 0.6;
+}
+
+.header-form input:focus {
+	color: #000000;
+
+	background-color: #f7e296;
+	outline: none;
+	opacity: 1;
+}
+
+.header-actions,
+.site-navigation,
+.catalog-menu-list {
+	list-style: none;
+}
+
+.header-actions a,
+.site-navigation a,
+.catalog-menu-list a {
+	color: #000000;
+}
+
+.header-logo:active,
+.header-actions a:active,
+.site-navigation a:active,
+.catalog-menu-list a:active {
+	opacity: 0.3;
+}
+
+.site-navigation {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+}
+
+/*Cтили для слайдера*/
+
+.slider-list {
+	list-style: none;
+}
+
+.title-accent-light {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.slider-item-number {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 179px;
+	line-height: 179px;
+	color: #ffffff;
+
+	background-color: #f7e296;
+}
+
+.slider-item-text {
+	color: #464646;
+}
+
+.btn {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.slider-item-value,
+.slider-item-feature {
+	list-style: none;
+}
+
+.slider-item-value {
+	font-family: "Gilroy Light", sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+.slider-item-feature {
+	font-size: 13px;
+	line-height: 20px;
+	color: #464646;
+
+	background-color: #ffffff;
+}
+
+.slider-button-list {
+	list-style: none;
+}
+
+/*Стили блока популярные товары*/
+
+
+.popular-goods-list {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	list-style: none;
+}
+
+.popular-goods-item img {
+	vertical-align: middle;
+}
+
+.popular-goods-item div {
+	width: 160px;
+	height: 160px;
+	line-height: 160px;
+	text-align: center;
+
+	background-color: #f7e296;
+}
+
+.popular-goods-item div:hover {
+	background-color: #f0c52e;
+}
+
+.popular-goods-item:active {
+	opacity: 0.3;
+}
+
+.popular-goods-product p {
+	color: #000000;
+}
+
+/*Стили для блока услуги*/
+
+.services {
+	background-color: #e5e5e5;
+}
+
+.btn-services-active {
+	color: #f7e184;
+
+	background-color: #000000;
+}
+
+.title {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	color: #000000;
+}
+
+/*Стили блока партнеров*/
+
+.partners-list {
+	list-style: none;
+}
+
+/*Стили блоков О нас и Контакты*/
+
+.info-list {
+	list-style: none;
+}
+
+.info-item {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0;
+	color: #000000;
+}
+
+/*Cтили страницы каталога*/
+
+.breadcrumbs-list {
+	list-style: none;
+}
+
+.breadcrumbs-active,
+.breadcrumbs-item a { 
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	opacity: 0.3;
+}
+
+/*Cтили для фильтров*/
+.specification-options fieldset {
+	border: 0 none;
+}
+
+.specification-filters-title {
+	background-color: #dcdcdc;
+}
+
+.specification-sorting-title {
+	background-color: #ebebeb;
+}
+
+.specification-options {
+	background-color: #efefef;
+}
+
+.specification-options-price legend,
+.specification-options-colors legend,
+.specification-options-bt legend {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.filters-colors-list,
+.filters-bt-list {
+	list-style: none;
+}
+
+.filters-colors-item label,
+.filters-bt-item label {
+	font-size: 14px;
+	line-height: 40px;
+	color: #000000;
+}
+
+.filters-colors-item input:checked:hover,
+.filters-colors-item input:hover {
+	opacity: 0.6;
+	color: #000000;
+}
+
+ 
+.filters-colors-item input:checked:active,
+.filters-colors-item input:active {
+	opacity: 1;
+	color: #000000;
+}
+
+.filters-colors-item input:disabled,
+.filters-colors-item input:checked:disabled  {
+	opacity: 0.25;
+	color: #000000;
+}
+
+.filters-bt-item input:checked:hover,
+.filters-bt-item input:hover {
+	opacity: 0.6;
+	color: #000000;
+}
+
+.filters-bt-item input:checked:active,
+.filters-bt-item input:active {
+	opacity: 1;
+	color: #000000;
+}
+
+.filters-bt-item input:disabled,
+.filters-bt-item input:checked:disabled  {
+	opacity: 0.25;
+	color: #000000;
+}
+
+.btn-options {
+	border: none;
+	background-color: transparent;
+}
+
+.catalog-list-item img:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.catalog-list-item h3 {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.catalog-list-item .item-price {
+	font-size: 16px;
+	line-height: 24px;
+	color: #464646;
+}
+
+.specification-filters-title h2,
+.specification-sorting-title h2 {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+/*Cтили для блока сортировки*/
+
+.specification-sorting-list {
+	list-style: none;
+}
+
+.specification-sorting-item a {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.specification-sorting-list a {
+	opacity: 0.3;
+}
+
+.specification-sorting-item a:hover {
+	opacity: 0.6;
+}
+
+.specification-sorting-item a:active {
+	opacity: 1;
+}
+
+.specification-sorting-up,
+.specification-sorting-down {
+	opacity: 0.2;
+}
+
+.specification-sorting-up:hover,
+.specification-sorting-down:hover {
+	opacity: 0.4;
+}
+
+.specification-sorting-up:active,
+.specification-sorting-down:active {
+	opacity: 1;
+}
+
+.catalog-buy-list,
+.catalog-pagination-list {
+	list-style: none;
+}
+
+.btn-catalog-order,
+.btn-catalog-compare {
+	border: none;
+	background-color: transparent;
+}
+
+.btn-catalog-order:hover {
+	background-color: #f0c52e;
+}
+
+.btn-catalog-order:active {
+	opacity: 0.3;
+}
+
+.btn-catalog-compare {
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.26px;
+	text-transform: unset;
+	opacity: 0.5;
+}
+
+.btn-catalog-compare:hover {
+	opacity: 1;
+} 
+
+.btn-catalog-compare:active {
+	opacity: 0.2;
+} 
+
+.catalog-pagination {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	
+	background-color: #ebebeb;
+}
+
+.catalog-pagination-back,
+.catalog-pagination-next {
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+
+	background-color: transparent;
+	border: none;
+}
+
+.catalog-pagination-back:hover,
+.catalog-pagination-next:hover {
+	background-color: #d9d9d9;
+}
+
+.catalog-pagination-back:active,
+.catalog-pagination-next:active {
+	background-color: #d9d9d9;
+	opacity: 0.08;
+}
+
+.catalog-pagination-item a {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.catalog-pagination-item a:hover {
+	opacity: 0.6;
+}
+
+.catalog-pagination-item a:active {
+	opacity: 1;
+}
+
+/*Стили футера*/
+
+.footer {
+	letter-spacing: 0;
+	color: #ffffff;
+
+	background-color: #464646;
+}
+
+.footer-center-column a {
+	color: #ffffff;
+}
+
+.footer-social,
+.footer-actions {
+	list-style: none;
+}
+
+.footer-social a {
+	opacity: 0.3;
+}
+
+.footer-social a:hover {
+	opacity: 0.6;
+}
+
+.footer-social a:active {
+	opacity: 0.1;
+}
+
+.footer-actions a {
+	line-height: 36px;
+	color: #ffffff;
+	opacity: 0.7;
+}
+
+.footer-actions a:hover {
+	opacity: 1;
+}
+
+.footer-actions a:active {
+	opacity: 0.3;
+}
+
+.btn-html-academy:hover,
+.footer-logo-active:hover {
+	opacity: 0.6;
+}
+
+.btn-html-academy:active,
+.footer-logo-active:active {
+	opacity: 0.3;
+}
+/*Фильт для изменения цвета логотипа*/
+.filter-logo {
+	filter: invert(79%) sepia(19%) saturate(4588%) hue-rotate(360deg) brightness(103%) contrast(105%);
+}
+
+/*Стили модальных окон*/
+
+.modal-letter {
+	background-color: #ffffff;
+}
+
+.letter-form label{
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.letter-form input,
+.letter-form textarea {
+	font-family: "open_sansregular", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #464646;
+
+	background-color: #f2f2f2;
+	border: none;
+	opacity: 0.5;
+}
+
+.letter-form input:hover,
+.letter-form textarea:hover {
+	background-color: #eaeaea;
+	opacity: 0.8;
+ }
+
+.letter-form input:focus,
+.letter-form textarea:focus {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+
+	background-color: #ffffff;
+	outline-width: 3px;
+	outline-style: solid;
+	outline-color: #f7e296;
+	opacity: 1;
+ }
+
+.letter-form input:invalid:not(:placeholder-shown),
+.letter-form textarea:invalid:not(:placeholder-shown) {
+	font-family: "open_sansregular", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #464646;
+
+	background-color: #f6dada;
+	opacity: 0.5;
+	outline: none;
+ }
+ 
+.letter-form input {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.btn-letter-send {
+	border: none;
+	background-color: transparent;
+}

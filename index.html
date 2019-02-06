@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -130,6 +133,7 @@
 					<div class="slider-button">
 						<ul class="slider-button-list">
 							<li class="slider-button-item slider-button-active">
+								<!-- Поменять ссылки на кнопки на занятии про декоративные элементы -->
 								<a href="#">
 									<img src="img/slider-button.svg" width="12" height="12" alt="Кнопка активного слайда">
 								</a>
@@ -158,52 +162,52 @@
 					<ul class="popular-goods-list">
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="virtual-reality.html"> 
-                <div>
-                	<img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-                </div>
-                <p class="popular-goods-caption">Виртуальная реальность</p>
-              </a>
-            </li>
+								<div>
+									<img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+								</div>
+								<p class="popular-goods-caption">Виртуальная реальность</p>
+							</a>
+						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="selfie-sticks.html">
-              	<div>
-               		<img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
-               	</div> 
-                <p class="popular-goods-caption">Моноподы для селфи</p>
-              </a>
-            </li>
+								<div>
+									<img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+								</div> 
+								<p class="popular-goods-caption">Моноподы для селфи</p>
+							</a>
+						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="action-cameras.html">
-               	<div>
-                 	<img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
-                </div>
-                <p class="popular-goods-caption">Экшн-камеры</p>
-              </a>
-            </li>
+								<div>
+									<img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+								</div>
+								<p class="popular-goods-caption">Экшн-камеры</p>
+							</a>
+						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="fitness-bangle.html"> 
-                <div>	
-                  <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
-                </div>
-                <p class="popular-goods-caption">Фитнес-браслеты</p>
-              </a>
-            </li>
+								<div>	
+									<img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+								</div>
+								<p class="popular-goods-caption">Фитнес-браслеты</p>
+							</a>
+						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="smart-watch.html"> 
-               	<div>
-                 	<img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
-                </div>
-                <p class="popular-goods-caption">Умные часы</p>
-              </a>
-            </li>
+								<div>
+									<img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+								</div>
+								<p class="popular-goods-caption">Умные часы</p>
+							</a>
+						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="quadcopters.html"> 
 								<div>
-                  <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+									<img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
 								</div>
-              	<p class="popular-goods-caption">Квадрокоптеры</p>
-              </a>
-            </li>
+								<p class="popular-goods-caption">Квадрокоптеры</p>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -292,7 +296,7 @@
 				<div class="footer-content">
 					<div class="footer-left-column">
 						<a class="footer-logo-active">
-							<img src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
+							<img class="filter-logo" src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
 						</a>
 						<p>г. Москва, ул. Строителей, 15</p>
 					</div>
@@ -313,7 +317,7 @@
 								<a class="btn social-btn-fb" href="#" aria-label="Магазин Девайс на Фейсбуке">Фейсбук</a>
 							</li>
 							<li>
-								<a class="btn social-btn-in" href="#" aria-label="Магазин Девайс в Инстаграмме" >Инстаграм</a>
+								<a class="btn social-btn-in" href="#" aria-label="Магазин Девайс в Инстаграмме">Инстаграм</a>
 							</li>
 							<li>
 								<a class="btn social-btn-tv" href="#" aria-label="Магазин Девайс в Твиттере">Твиттер</a>
@@ -346,11 +350,11 @@
 			<form class="letter-form">
 				<p>
 					<label for="letter-user">Ваше имя:</label>
-					<input id="letter-user" type="text" name="login-user" placeholder="Имя Фамилия">
+					<input id="letter-user" type="text" name="login-user" placeholder="Имя Фамилия" required>
 				</p>
 				<p>
 					<label for="letter-email">Ваш e-mail:</label>
-					<input id="letter-email" type="email" name="email-user" placeholder="email@example.com">
+					<input id="letter-email" type="email" name="email-user" placeholder="email@example.com" required>
 				</p>
 				<p>
 					<label for="letter-text">Текст письма:</label>
