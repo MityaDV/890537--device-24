@@ -488,6 +488,10 @@ a {
 .footer-logo-active:active {
 	opacity: 0.3;
 }
+/*Фильт для изменения цвета логотипа*/
+.filter-logo {
+	filter: invert(79%) sepia(19%) saturate(4588%) hue-rotate(360deg) brightness(103%) contrast(105%);
+}
 
 /*Стили модальных окон*/
 
@@ -525,17 +529,17 @@ a {
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-	color: #464646;
+	color: #000000;
 
 	background-color: #ffffff;
 	outline-width: 3px;
 	outline-style: solid;
 	outline-color: #f7e296;
-	opacity: 0.5;
+	opacity: 1;
  }
 
-letter-form input:invalid,
-.letter-form textarea:invalid {
+.letter-form input:invalid:not(:placeholder-shown),
+.letter-form textarea:invalid:not(:placeholder-shown) {
 	font-family: "open_sansregular", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
@@ -543,6 +547,7 @@ letter-form input:invalid,
 
 	background-color: #f6dada;
 	opacity: 0.5;
+	outline: none;
  }
  
 .letter-form input {
