@@ -255,6 +255,11 @@ a {
 	opacity: 0.3;
 }
 
+/*Cтили для фильтров*/
+.specification-options fieldset {
+	border: 0 none;
+}
+
 .specification-filters-title {
 	background-color: #dcdcdc;
 }
@@ -284,6 +289,11 @@ a {
 .btn-options {
 	border: none;
 	background-color: transparent;
+}
+
+.catalog-list-item img:hover {
+	opacity: 0.7;
+	cursor: pointer;
 }
 
 .catalog-list-item h3 {
@@ -321,19 +331,37 @@ a {
 	opacity: 0.3;
 }
 
+.specification-sorting-item a:hover {
+	opacity: 0.6;
+}
+
+.specification-sorting-item a:active {
+	opacity: 1;
+}
+
 .specification-sorting-list li:first-child a {
 	opacity: 1;
 }
 
-.specification-sorting-up {
+.specification-sorting-up,
+.specification-sorting-down {
 	opacity: 0.2;
 }
+
+.specification-sorting-up:hover,
+.specification-sorting-down:hover {
+	opacity: 0.4;
+}
+
+.specification-sorting-up:active,
+.specification-sorting-down:active {
+	opacity: 1;
+}
+
 .catalog-buy-list,
 .catalog-pagination-list {
 	list-style: none;
 }
-
-
 
 .btn-catalog-order,
 .btn-catalog-compare {
@@ -366,8 +394,45 @@ a {
 	opacity: 0.2;
 } 
 
-.catalog-pagination-back {
+.catalog-pagination {
+	font-family: "Gilroy ExtraBold", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
 	
+	background-color: #ebebeb;
+}
+
+.catalog-pagination-back,
+.catalog-pagination-next {
+	text-transform: uppercase;
+	letter-spacing: 3.6px;
+
+	background-color: transparent;
+	border: none;
+}
+
+.catalog-pagination-back:hover,
+.catalog-pagination-next:hover {
+	background-color: #d9d9d9;
+}
+
+.catalog-pagination-back:active,
+.catalog-pagination-next:active {
+	background-color: #d9d9d9;
+	opacity: 0.08;
+}
+
+.catalog-pagination-item a {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.catalog-pagination-item a:hover {
+	opacity: 0.6;
+}
+
+.catalog-pagination-item a:active {
+	opacity: 1;
 }
 
 /*Стили футера*/
@@ -489,4 +554,3 @@ letter-form input:invalid,
 	border: none;
 	background-color: transparent;
 }
-
