@@ -286,6 +286,50 @@ a {
 	list-style: none;
 }
 
+.filters-colors-item label,
+.filters-bt-item label {
+	font-size: 14px;
+	line-height: 40px;
+	color: #000000;
+}
+
+.filters-colors-item input:checked:hover,
+.filters-colors-item input:hover {
+	opacity: 0.6;
+	color: #000000;
+}
+
+ 
+.filters-colors-item input:checked:active,
+.filters-colors-item input:active {
+	opacity: 1;
+	color: #000000;
+}
+
+.filters-colors-item input:disabled,
+.filters-colors-item input:checked:disabled  {
+	opacity: 0.25;
+	color: #000000;
+}
+
+.filters-bt-item input:checked:hover,
+.filters-bt-item input:hover {
+	opacity: 0.6;
+	color: #000000;
+}
+
+.filters-bt-item input:checked:active,
+.filters-bt-item input:active {
+	opacity: 1;
+	color: #000000;
+}
+
+.filters-bt-item input:disabled,
+.filters-bt-item input:checked:disabled  {
+	opacity: 0.25;
+	color: #000000;
+}
+
 .btn-options {
 	border: none;
 	background-color: transparent;
@@ -319,6 +363,8 @@ a {
 	color: #000000;
 }
 
+/*Cтили для блока сортировки*/
+
 .specification-sorting-list {
 	list-style: none;
 }
@@ -331,15 +377,15 @@ a {
 	opacity: 0.3;
 }
 
+.specification-sorting-list a {
+	opacity: 0.3;
+}
+
 .specification-sorting-item a:hover {
 	opacity: 0.6;
 }
 
 .specification-sorting-item a:active {
-	opacity: 1;
-}
-
-.specification-sorting-list li:first-child a {
 	opacity: 1;
 }
 
