@@ -27,9 +27,17 @@
     font-style: normal;
 }
 
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	padding-top: 40px;
 
 	font-family: "Open Sans", Tahoma, sans-serif;
 	font-size: 15px;
@@ -47,12 +55,58 @@ a {
 	text-decoration: none;
 }
 
+/*body > * {
+	background-color: rgba(255, 0, 0, 0.5);
+}
+body > * > * {
+	background-color: rgba(0, 150, 255, 0.5);
+}
+body > * > * > * {
+	background-color: rgba(0, 240, 255, 0.5);
+}
+body > * > * > * > * {
+	background-color: rgba(0, 255, 0, 0.5);
+}*/
 /*Стили для Хедера*/
 
 .navigation {
 	color: #000000;
 
 	background-color: #f7e296;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.navigation-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 60px;
+}
+
+.header-logo {
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.header-logo img {
+	width: 163px;
+	height: 35px;
+}
+
+.header-form {
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.header-form p {
+	margin: 0;
+	padding: 0;
 }
 
 .header-form input {
@@ -63,9 +117,26 @@ a {
 	opacity: 0.3;
 }
 
+.header-actions {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.site-navigation-catalog {
+	width: 50%;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
 .header-logo:hover,
 .header-form input:hover,
 .header-actions a:hover,
+.site-navigation-catalog a:hover,
 .site-navigation a:hover,
 .catalog-menu-list a:hover {
 	opacity: 0.6;
@@ -80,12 +151,16 @@ a {
 }
 
 .header-actions,
+.site-navigation-catalog,
 .site-navigation,
 .catalog-menu-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .header-actions a,
+.site-navigation-catalog a,
 .site-navigation a,
 .catalog-menu-list a {
 	color: #000000;
@@ -93,11 +168,13 @@ a {
 
 .header-logo:active,
 .header-actions a:active,
+.site-navigation-catalog a:active,
 .site-navigation a:active,
 .catalog-menu-list a:active {
 	opacity: 0.3;
 }
 
+.site-navigation-catalog,
 .site-navigation {
 	font-family: "Gilroy ExtraBold", sans-serif;
 	font-size: 18px;
@@ -226,8 +303,15 @@ a {
 
 /*Стили блока партнеров*/
 
+.partners {
+	margin-bottom: 85px;
+}
+
 .partners-list {
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
+	padding: 0;
 }
 
 /*Стили блоков О нас и Контакты*/
@@ -242,6 +326,35 @@ a {
 	line-height: 40px;
 	letter-spacing: 0;
 	color: #000000;
+}
+
+.info-wrapper .title-accent,
+.contacts-wrapper .title-accent {
+	margin-top: 50px;
+}
+
+.info-contacts-wrapper {
+	display: flex;
+	width: 100%;
+}
+
+.info-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+	margin-right: auto;
+}
+
+.contacts-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.info.contacts {
+	margin-bottom: 90px;
 }
 
 /*Cтили страницы каталога*/
@@ -490,6 +603,7 @@ a {
 /*Стили футера*/
 
 .footer {
+	padding: 60px 0;
 	letter-spacing: 0;
 	color: #ffffff;
 
@@ -540,12 +654,82 @@ a {
 .footer-logo-active:active {
 	opacity: 0.3;
 }
-/*Фильт для изменения цвета логотипа*/
+
 .filter-logo {
 	filter: invert(79%) sepia(19%) saturate(4588%) hue-rotate(360deg) brightness(103%) contrast(105%);
 }
 
-/*Стили модальных окон*/
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-left-column {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+}
+
+.footer-logo-active img {
+	width: 163px;
+	height: 35px;
+}
+
+.footer-left-column p {
+	margin: 0;
+	margin-top: 35px;
+}
+
+.footer-center-column {
+	width: auto;
+}
+
+.footer-center-column .site-navigation {
+	margin-top: 80px;
+}
+
+.site-navigation li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.footer-social {
+	display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 65px;
+  padding: 0;
+}
+
+.footer-right-column {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: auto;
+}
+
+.footer-right-column p {
+	margin: 0;
+	margin-top: 40px;
+}
+
+.footer-actions {
+	display: flex;
+	margin: 0;
+  padding: 0;
+}
+
+.footer-actions li:not(:first-child) {
+	margin-left: 60px;
+}
+
+.footer-right-column span {
+	margin-top: 60px;
+}
+
+
+
+/*стили для модальных окон*/
 
 .modal-letter {
 	background-color: #ffffff;
