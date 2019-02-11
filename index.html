@@ -12,10 +12,11 @@
 		<header class="header">
 			<nav class="navigation container" aria-label="Главное меню навигации">
 				<div class="navigation-wrapper">
-					<a class="header-logo">
-						<img src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
-					</a>
-									
+					<div class="header-logo">
+						<a>
+							<img src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
+						</a>
+					</div>				
 					<form class="header-form" action="https://echo.htmlacademy.ru" method="post">
 						<p>
 							<label for="form-search">ХХХ</label>
@@ -35,11 +36,9 @@
 						</li>
 					</ul>
 					
-					<ul class="site-navigation-catalog">
-						<li class="site-navigation-item ">
-							<a href="catalog.html">Каталог товаров</a>
-						</li>
-					</ul>
+					<div class="site-navigation-catalog">
+						<a href="catalog.html">Каталог товаров</a>
+					</div>
 
 					<ul class="site-navigation">
 						<li class="site-navigation-item site-navigation-delivery">
@@ -169,7 +168,7 @@
 					<ul class="popular-goods-list">
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="virtual-reality.html"> 
-								<div>
+								<div class="popular-goods-foto">
 									<img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
 								</div>
 								<p class="popular-goods-caption">Виртуальная реальность</p>
@@ -177,7 +176,7 @@
 						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="selfie-sticks.html">
-								<div>
+								<div class="popular-goods-foto">
 									<img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
 								</div> 
 								<p class="popular-goods-caption">Моноподы для селфи</p>
@@ -185,7 +184,7 @@
 						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="action-cameras.html">
-								<div>
+								<div class="popular-goods-foto">
 									<img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
 								</div>
 								<p class="popular-goods-caption">Экшн-камеры</p>
@@ -193,7 +192,7 @@
 						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="fitness-bangle.html"> 
-								<div>	
+								<div class="popular-goods-foto">	
 									<img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
 								</div>
 								<p class="popular-goods-caption">Фитнес-браслеты</p>
@@ -201,7 +200,7 @@
 						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="smart-watch.html"> 
-								<div>
+								<div class="popular-goods-foto">
 									<img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
 								</div>
 								<p class="popular-goods-caption">Умные часы</p>
@@ -209,7 +208,7 @@
 						</li>
 						<li class="popular-goods-item">
 							<a class="popular-goods-product" href="quadcopters.html"> 
-								<div>
+								<div class="popular-goods-foto">
 									<img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
 								</div>
 								<p class="popular-goods-caption">Квадрокоптеры</p>
@@ -308,38 +307,13 @@
 
 		<footer class="footer">
 			<div class="container">
-				<div class="footer-content">
-					<div class="footer-left-column">
-						<a class="footer-logo-active">
-							<img class="filter-logo" src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
-						</a>
-						<p>г. Москва, ул. Строителей, 15</p>
-					</div>
-					<div class="footer-center-column">
-						<ul class="site-navigation">
-							<li class="site-navigation-item site-navigation-delivery">
-								<a href="#">Доставка</a>
-							</li>
-							<li class="site-navigation-item site-navigation-warranty">
-								<a href="#">Гарантия</a>
-							</li>
-							<li class="site-navigation-item site-navigation-contacts">
-								<a href="#">Контакты</a>
-							</li>
-						</ul>
-						<ul class="footer-social">
-							<li>
-								<a class="btn social-btn-fb" href="#" aria-label="Магазин Девайс на Фейсбуке">Фейсбук</a>
-							</li>
-							<li>
-								<a class="btn social-btn-in" href="#" aria-label="Магазин Девайс в Инстаграмме">Инстаграм</a>
-							</li>
-							<li>
-								<a class="btn social-btn-tv" href="#" aria-label="Магазин Девайс в Твиттере">Твиттер</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer-right-column">
+				<!-- <div class="footer-content"> -->
+					<div class="footer-content top">
+						<div class="footer-logo-active">
+							<a>
+								<img class="filter-logo" src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
+							</a>
+						</div>
 						<ul class="footer-actions">
 							<li>
 								<a class="footer-actions-link footer-actions-enter" href="#">Войти</a>
@@ -351,10 +325,39 @@
 								<a class="footer-actions-link footer-actions-order" href="#">Корзина</a>
 							</li>
 						</ul>
+					</div>
+					
+					<div class="footer-content middle">
+						<p>г. Москва, ул. Строителей, 15</p>
+						<ul class="site-navigation">
+							<li class="site-navigation-item site-navigation-delivery">
+								<a href="#">Доставка</a>
+							</li>
+							<li class="site-navigation-item site-navigation-warranty">
+								<a href="#">Гарантия</a>
+							</li>
+							<li class="site-navigation-item site-navigation-contacts">
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
 						<p>Тел.: +7 (495) 495-95-95</p>
+					</div>
+
+					<div class="footer-content bottom">
+						<ul class="footer-social">
+							<li>
+								<a class="btn social-btn-fb" href="#" aria-label="Магазин Девайс на Фейсбуке">Фейсбук</a>
+							</li>
+							<li>
+								<a class="btn social-btn-in" href="#" aria-label="Магазин Девайс в Инстаграмме">Инстаграм</a>
+							</li>
+							<li>
+								<a class="btn social-btn-tv" href="#" aria-label="Магазин Девайс в Твиттере">Твиттер</a>
+							</li>
+						</ul>
 						<span><a class="btn btn-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></span>
 					</div>
-				</div>
+				
 			</div>
 		</footer>
 

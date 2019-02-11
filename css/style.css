@@ -67,12 +67,11 @@ body > * > * > * {
 body > * > * > * > * {
 	background-color: rgba(0, 255, 0, 0.5);
 }*/
+
 /*Стили для Хедера*/
 
 .navigation {
 	color: #000000;
-
-	background-color: #f7e296;
 }
 
 .container {
@@ -87,10 +86,12 @@ body > * > * > * > * {
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 60px;
+
+	background-color: #f7e296;
 }
 
 .header-logo {
-	width: 100%;
+	flex-basis: 100%;
 	margin-bottom: 35px;
 }
 
@@ -100,7 +101,7 @@ body > * > * > * > * {
 }
 
 .header-form {
-	width: 50%;
+	flex-basis: 50%;
 	margin-bottom: 40px;
 }
 
@@ -120,17 +121,17 @@ body > * > * > * > * {
 .header-actions {
 	display: flex;
 	justify-content: space-between;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .site-navigation-catalog {
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .site-navigation {
 	display: flex;
 	justify-content: space-between;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .header-logo:hover,
@@ -249,27 +250,51 @@ body > * > * > * > * {
 
 
 .popular-goods-list {
+	display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
 	font-family: "Gilroy ExtraBold", sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	color: #000000;
-	list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  list-style: none;
 }
 
-.popular-goods-item img {
-	vertical-align: middle;
-}
-
-.popular-goods-item div {
-	width: 160px;
-	height: 160px;
-	line-height: 160px;
-	text-align: center;
+.popular-goods-item {
+	flex-basis: 160px;
 
 	background-color: #f7e296;
 }
 
-.popular-goods-item div:hover {
+.popular-goods-product {
+	display: flex;
+  flex-direction: column;
+}
+
+.popular-goods-foto {
+	flex-basis: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.popular-goods-foto img {
+	margin: 0 auto;
+}
+
+.popular-goods-caption {
+	margin: 0;
+	padding-top: 30px;
+	text-align: left;
+  color: #000000;
+
+  background-color: white;
+}
+
+.popular-goods-item:hover {
 	background-color: #f0c52e;
 }
 
@@ -277,9 +302,7 @@ body > * > * > * > * {
 	opacity: 0.3;
 }
 
-.popular-goods-product p {
-	color: #000000;
-}
+
 
 /*Стили для блока услуги*/
 
@@ -335,14 +358,14 @@ body > * > * > * > * {
 
 .info-contacts-wrapper {
 	display: flex;
-	width: 100%;
+	flex-basis: 100%;
 }
 
 .info-wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 50%;
+	flex-basis: 50%;
 	margin-right: auto;
 }
 
@@ -350,7 +373,7 @@ body > * > * > * > * {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .info.contacts {
@@ -359,8 +382,20 @@ body > * > * > * > * {
 
 /*Cтили страницы каталога*/
 
+.title-page {
+	padding-left: 60px;
+}
+
 .breadcrumbs-list {
+	display: flex;
+	flex-basis: 100%;
+	margin: 0;
+	padding-left: 60px;
 	list-style: none;
+}
+
+.breadcrumbs-list li {
+	margin-right: 40px;
 }
 
 .breadcrumbs-active,
@@ -372,12 +407,16 @@ body > * > * > * > * {
 }
 
 /*Cтили для фильтров*/
+
+.specification-wrapper {
+	display: flex;
+}
+
 .specification-options fieldset {
 	border: 0 none;
 }
 
 .specification-filters-title {
-
 	background-color: #dcdcdc;
 }
 
@@ -386,7 +425,59 @@ body > * > * > * > * {
 }
 
 .specification-options {
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+
 	background-color: #efefef;
+}
+
+.specification-options-price {
+	margin: 0;
+	padding: 0;
+}
+
+.specification-options-colors {
+	margin: 0;
+	padding: 0;
+}
+
+.filters-colors-list {
+	margin: 0;
+	padding: 0;
+}
+
+.specification-options-bt {
+	margin: 0;
+	padding: 0;
+}
+
+.filters-bt-list {
+	margin: 0;
+	padding: 0;
+}
+
+.specification-sorting-title {
+	display: flex;
+ 	
+}
+
+.specification-sorting-list {
+	display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 70px;
+}
+
+.catalog-list .catalog-list-item:nth-child(odd) {
+	padding-right: 40px;
 }
 
 .specification-options-price legend,
@@ -559,6 +650,13 @@ body > * > * > * > * {
 	opacity: 0.2;
 } 
 
+.catalog-pagination-list {
+	display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-pagination {
 	font-family: "Gilroy ExtraBold", sans-serif;
 	font-size: 16px;
@@ -602,6 +700,29 @@ body > * > * > * > * {
 
 /*Стили футера*/
 
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+}
+ 
+.footer-actions li {
+	display: inline-block;
+}
+
+.footer-actions li:not(:last-child) {
+	padding-right: 30px;
+}
+
+.footer-content.middle {
+	align-items: baseline;
+}
+
+.footer-social li {
+	display: inline-block;
+}
+
 .footer {
 	padding: 60px 0;
 	letter-spacing: 0;
@@ -610,13 +731,27 @@ body > * > * > * > * {
 	background-color: #464646;
 }
 
-.footer-center-column a {
+.footer-content.middle a {
 	color: #ffffff;
 }
 
 .footer-social,
 .footer-actions {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-actions {
+	margin-left: auto;
+}
+
+.middle .site-navigation {
+	margin: 0 auto;
+}
+
+.footer-content.bottom {
+	justify-content: space-between;
 }
 
 .footer-social a {
@@ -659,75 +794,10 @@ body > * > * > * > * {
 	filter: invert(79%) sepia(19%) saturate(4588%) hue-rotate(360deg) brightness(103%) contrast(105%);
 }
 
-.footer-content {
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-left-column {
-	display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: auto;
-}
-
 .footer-logo-active img {
 	width: 163px;
 	height: 35px;
 }
-
-.footer-left-column p {
-	margin: 0;
-	margin-top: 35px;
-}
-
-.footer-center-column {
-	width: auto;
-}
-
-.footer-center-column .site-navigation {
-	margin-top: 80px;
-}
-
-.site-navigation li:not(:last-child) {
-	margin-right: 30px;
-}
-
-.footer-social {
-	display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 65px;
-  padding: 0;
-}
-
-.footer-right-column {
-	display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: auto;
-}
-
-.footer-right-column p {
-	margin: 0;
-	margin-top: 40px;
-}
-
-.footer-actions {
-	display: flex;
-	margin: 0;
-  padding: 0;
-}
-
-.footer-actions li:not(:first-child) {
-	margin-left: 60px;
-}
-
-.footer-right-column span {
-	margin-top: 60px;
-}
-
-
 
 /*стили для модальных окон*/
 
