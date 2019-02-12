@@ -1,34 +1,34 @@
 @font-face {
   font-style: normal;
   font-weight: 800;
-  font-family: 'gilroyextrabold';
+  font-family: "gilroyextrabold";
 
-  src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
-  url('../fonts/gilroyextrabold-webfont.woff') format('woff');
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold-webfont.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: 'gilroylight';
+  font-family: "gilroylight";
 
-  src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
-  url('../fonts/gilroylight-webfont.woff') format('woff');
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
+  url("../fonts/gilroylight-webfont.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: 'open_sanslight';
+  font-family: "open_sanslight";
 
-  src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
-  url('../fonts/opensans-light-webfont.woff') format('woff');
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
+  url("../fonts/opensans-light-webfont.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: 'open_sansregular';
+  font-family: "open_sansregular";
 
-  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-  url('../fonts/opensans-regular-webfont.woff') format('woff');
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+  url("../fonts/opensans-regular-webfont.woff") format("woff");
 }
 
 html {
@@ -48,11 +48,11 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  font-family: 'Open Sans', Tahoma, sans-serif;
-  letter-spacing: .15px;
+  font-family: "Open Sans", Tahoma, sans-serif;
+  letter-spacing: 0.15px;
   color: #464646;
 
-  background-color: #fff;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -61,23 +61,32 @@ a {
   text-decoration: none;
 }
 
-body > * {
-  background-color: rgba(255, 0, 0, .5);
+/*body > * {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 body > * > * {
-  background-color: rgba(0, 150, 255, .5);
+  background-color: rgba(0, 150, 255, 0.5);
 }
 body > * > * > * {
-  background-color: rgba(0, 240, 255, .5);
+  background-color: rgba(0, 240, 255, 0.5);
 }
 body > * > * > * > * {
-  background-color: rgba(0, 255, 0, .5);
+  background-color: rgba(0, 255, 0, 0.5);
+}*/
+
+/*Стили для списков*/
+
+.page-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 /*Стили для Хедера*/
 
 .navigation {
-  color: #000;
+  color: #000000;
 }
 
 .container {
@@ -98,7 +107,7 @@ body > * > * > * > * {
 }
 
 .header-logo {
-  flex-basis: 100%;
+  width: 100%;
   margin-bottom: 35px;
 }
 
@@ -108,7 +117,6 @@ body > * > * > * > * {
 }
 
 .header-form {
-  flex-basis: 50%;
   margin-bottom: 40px;
 }
 
@@ -122,7 +130,7 @@ body > * > * > * > * {
 
   background-color: #f7e296;
   border: none;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .header-actions {
@@ -141,17 +149,17 @@ body > * > * > * > * {
   flex-basis: 50%;
 }
 
-.header-logo:hover,
+.header-logo img:hover,
 .header-form input:hover,
 .header-actions a:hover,
 .site-navigation-catalog a:hover,
 .site-navigation a:hover,
 .catalog-menu-list a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .header-form input:focus {
-  color: #000;
+  color: #000000;
 
   background-color: #f7e296;
   opacity: 1;
@@ -159,36 +167,26 @@ body > * > * > * > * {
   outline: none;
 }
 
-.header-actions,
-.site-navigation-catalog,
-.site-navigation,
-.catalog-menu-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .header-actions a,
 .site-navigation-catalog a,
 .site-navigation a,
 .catalog-menu-list a {
-  color: #000;
+  color: #000000;
 }
 
-.header-logo:active,
+.header-logo img:active,
 .header-actions a:active,
 .site-navigation-catalog a:active,
 .site-navigation a:active,
 .catalog-menu-list a:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .site-navigation-catalog,
 .site-navigation {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-family: "Gilroy ExtraBold", sans-serif;
   letter-spacing: 3.6px;
 
   text-transform: uppercase;
@@ -196,19 +194,15 @@ body > * > * > * > * {
 
 /*Cтили для слайдера*/
 
-.slider-list {
-  list-style: none;
-}
-
 .title-accent-light {
   margin: 0;
 
   font-size: 47px;
   line-height: 56px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
-  color: #000;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  color: #000000;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .slider-item-number {
@@ -216,8 +210,8 @@ body > * > * > * > * {
 
   font-size: 179px;
   line-height: 179px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
-  color: #fff;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  color: #ffffff;
 
   background-color: #f7e296;
 }
@@ -229,22 +223,17 @@ body > * > * > * > * {
 .btn {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-family: "Gilroy ExtraBold", sans-serif;
   letter-spacing: 3.6px;
-  color: #000;
+  color: #000000;
 
   text-transform: uppercase;
-}
-
-.slider-item-value,
-.slider-item-feature {
-  list-style: none;
 }
 
 .slider-item-value {
   font-size: 36px;
   line-height: 48px;
-  font-family: 'Gilroy Light', sans-serif;
+  font-family: "Gilroy Light", sans-serif;
 }
 
 .slider-item-feature {
@@ -252,30 +241,21 @@ body > * > * > * > * {
   line-height: 20px;
   color: #464646;
 
-  background-color: #fff;
-}
-
-
-.slider-button-list {
-  list-style: none;
+  background-color: #ffffff;
 }
 
 /*Стили блока популярные товары*/
-
 
 .popular-goods-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0;
-  padding: 0;
 
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-family: "Gilroy ExtraBold", sans-serif;
   text-align: center;
-  list-style: none;
-  color: #000;
+  color: #000000;
 }
 
 .popular-goods-item {
@@ -292,7 +272,11 @@ body > * > * > * > * {
 .popular-goods-foto {
   display: flex;
   align-items: center;
-  flex-basis: 160px;
+  min-height: 160px;
+}
+
+.popular-goods-bottom {
+  align-items: flex-end;
 }
 
 .popular-goods-foto img {
@@ -304,9 +288,9 @@ body > * > * > * > * {
   padding-top: 30px;
 
   text-align: left;
-  color: #000;
+  color: #000000;
 
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .popular-goods-item:hover {
@@ -314,7 +298,7 @@ body > * > * > * > * {
 }
 
 .popular-goods-item:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /*Стили для блока услуги*/
@@ -326,7 +310,7 @@ body > * > * > * > * {
 .btn-services-active {
   color: #f7e184;
 
-  background-color: #000;
+  background-color: #000000;
 }
 
 .title {
@@ -334,8 +318,8 @@ body > * > * > * > * {
 
   font-size: 47px;
   line-height: 48px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
-  color: #000;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  color: #000000;
 }
 
 /*Стили блока партнеров*/
@@ -347,48 +331,37 @@ body > * > * > * > * {
 .partners-list {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-
-  list-style: none;
 }
 
 /*Стили блоков О нас и Контакты*/
 
-.info-list {
-  list-style: none;
-}
-
 .info-item {
   font-size: 16px;
   line-height: 40px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-family: "Gilroy ExtraBold", sans-serif;
   letter-spacing: 0;
-  color: #000;
+  color: #000000;
 }
 
-.info-wrapper .title-accent,
-.contacts-wrapper .title-accent {
+.info-wrapper h2,
+.contacts-wrapper h2 {
   margin-top: 50px;
 }
 
 .info-contacts-wrapper {
   display: flex;
-  flex-basis: 100%;
 }
 
+.contacts-wrapper,
 .info-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 50%;
-  margin-right: auto;
 }
 
-.contacts-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 50%;
+.info-wrapper {
+  flex-grow: 1;
+  padding-right: 130px;
 }
 
 .info.contacts {
@@ -404,10 +377,7 @@ body > * > * > * > * {
 .breadcrumbs-list {
   display: flex;
   flex-basis: 100%;
-  margin: 0;
   padding-left: 60px;
-
-  list-style: none;
 }
 
 .breadcrumbs-list li {
@@ -418,9 +388,9 @@ body > * > * > * > * {
 .breadcrumbs-item a {
   font-size: 14px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
 
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /*Cтили для фильтров*/
@@ -430,7 +400,7 @@ body > * > * > * > * {
 }
 
 .specification-options fieldset {
-  border: 0 none;
+  border: none;
 }
 
 .specification-filters-title {
@@ -449,39 +419,16 @@ body > * > * > * > * {
   background-color: #efefef;
 }
 
-.specification-options-price {
-  margin: 0;
-  padding: 0;
-}
-
-.specification-options-colors {
-  margin: 0;
-  padding: 0;
-}
-
-.filters-colors-list {
-  margin: 0;
-  padding: 0;
-}
-
+.specification-options-price,
+.specification-options-colors,
 .specification-options-bt {
   margin: 0;
   padding: 0;
 }
 
-.filters-bt-list {
-  margin: 0;
-  padding: 0;
-}
-
-.specification-sorting-title {
-  display: flex;
-}
-
+.specification-sorting-title,
 .specification-sorting-list {
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-list {
@@ -491,72 +438,63 @@ body > * > * > * > * {
   padding: 70px;
 }
 
-.catalog-list .catalog-list-item:nth-child(odd) {
-  padding-right: 40px;
-}
-
 .specification-options-price legend,
 .specification-options-colors legend,
 .specification-options-bt legend {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
-  color: #000;
-}
-
-.filters-colors-list,
-.filters-bt-list {
-  list-style: none;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  color: #000000;
 }
 
 .filters-colors-item label,
 .filters-bt-item label {
   font-size: 14px;
   line-height: 40px;
-  color: #000;
+  color: #000000;
 }
 
 .filters-colors-item input:checked:hover,
 .filters-colors-item input:hover {
-  color: #000;
+  color: #000000;
 
-  opacity: .6;
+  opacity: 0.6;
 }
-
-
 .filters-colors-item input:checked:active,
 .filters-colors-item input:active {
-  color: #000;
+  color: #000000;
 
   opacity: 1;
 }
 
+
 .filters-colors-item input:disabled,
 .filters-colors-item input:checked:disabled  {
-  color: #000;
+  color: #000000;
 
-  opacity: .25;
+  opacity: 0.25;
 }
+
 
 .filters-bt-item input:checked:hover,
 .filters-bt-item input:hover {
-  color: #000;
+  color: #000000;
 
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .filters-bt-item input:checked:active,
 .filters-bt-item input:active {
-  color: #000;
+  color: #000000;
 
   opacity: 1;
 }
 
 .filters-bt-item input:disabled,
 .filters-bt-item input:checked:disabled  {
-  color: #000;
+  color: #000000;
 
-  opacity: .25;
+  opacity: 0.25;
 }
 
 .btn-options {
@@ -565,7 +503,7 @@ body > * > * > * > * {
 }
 
 .catalog-list-item img:hover {
-  opacity: .7;
+  opacity: 0.7;
 
   cursor: pointer;
 }
@@ -575,8 +513,8 @@ body > * > * > * > * {
 
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
-  color: #000;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  color: #000000;
 }
 
 .catalog-list-item .item-price {
@@ -591,34 +529,30 @@ body > * > * > * > * {
 
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-family: "Gilroy ExtraBold", sans-serif;
   letter-spacing: 3.6px;
-  color: #000;
+  color: #000000;
 
   text-transform: uppercase;
 }
 
 /*Cтили для блока сортировки*/
 
-.specification-sorting-list {
-  list-style: none;
-}
-
 .specification-sorting-item a {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
-  color: #000;
+  color: #000000;
 
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .specification-sorting-list a {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .specification-sorting-item a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .specification-sorting-item a:active {
@@ -627,22 +561,17 @@ body > * > * > * > * {
 
 .specification-sorting-up,
 .specification-sorting-down {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .specification-sorting-up:hover,
 .specification-sorting-down:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .specification-sorting-up:active,
 .specification-sorting-down:active {
   opacity: 1;
-}
-
-.catalog-buy-list,
-.catalog-pagination-list {
-  list-style: none;
 }
 
 .btn-catalog-order,
@@ -656,16 +585,16 @@ body > * > * > * > * {
 }
 
 .btn-catalog-order:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .btn-catalog-compare {
   font-size: 13px;
   line-height: 20px;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: .26px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.26px;
 
-  opacity: .5;
+  opacity: 0.5;
 
   text-transform: unset;
 }
@@ -675,20 +604,18 @@ body > * > * > * > * {
 }
 
 .btn-catalog-compare:active {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .catalog-pagination-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-pagination {
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
+  font-family: "Gilroy ExtraBold", sans-serif;
 
   background-color: #ebebeb;
 }
@@ -711,17 +638,17 @@ body > * > * > * > * {
 .catalog-pagination-back:active,
 .catalog-pagination-next:active {
   background-color: #d9d9d9;
-  opacity: .08;
+  opacity: 0.08;
 }
 
 .catalog-pagination-item a {
-  color: #000;
+  color: #000000;
 
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .catalog-pagination-item a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .catalog-pagination-item a:active {
@@ -732,9 +659,8 @@ body > * > * > * > * {
 
 .footer-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-basis: 100%;
 }
 
 .footer-actions li {
@@ -745,10 +671,6 @@ body > * > * > * > * {
   padding-right: 30px;
 }
 
-.footer-content.middle {
-  align-items: baseline;
-}
-
 .footer-social li {
   display: inline-block;
 }
@@ -757,52 +679,32 @@ body > * > * > * > * {
   padding: 60px 0;
 
   letter-spacing: 0;
-  color: #fff;
+  color: #ffffff;
 
   background-color: #464646;
 }
 
-.footer-content.middle a {
-  color: #fff;
-}
-
-.footer-social,
-.footer-actions {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.footer-actions {
-  margin-left: auto;
-}
-
-.middle .site-navigation {
-  margin: 0 auto;
-}
-
-.footer-content.bottom {
-  justify-content: space-between;
+.footer-contacts a {
+  color: #ffffff;
 }
 
 .footer-social a {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .footer-social a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .footer-social a:active {
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .footer-actions a {
   line-height: 36px;
-  color: #fff;
+  color: #ffffff;
 
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .footer-actions a:hover {
@@ -810,21 +712,17 @@ body > * > * > * > * {
 }
 
 .footer-actions a:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .btn-html-academy:hover,
-.footer-logo-active:hover {
-  opacity: .6;
+.footer-logo-active img:hover {
+  opacity: 0.6;
 }
 
 .btn-html-academy:active,
-.footer-logo-active:active {
-  opacity: .3;
-}
-
-.filter-logo {
-  filter: invert(79%) sepia(19%) saturate(4588%) hue-rotate(360deg) brightness(103%) contrast(105%);
+.footer-logo-active img:active {
+  opacity: 0.3;
 }
 
 .footer-logo-active img {
@@ -835,42 +733,42 @@ body > * > * > * > * {
 /*стили для модальных окон*/
 
 .modal-letter {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .letter-form label{
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Gilroy ExtraBold', sans-serif;
-  color: #000;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  color: #000000;
 }
 
 .letter-form input,
 .letter-form textarea {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'open_sansregular', sans-serif;
+  font-family: "open_sansregular", sans-serif;
   color: #464646;
 
   background-color: #f2f2f2;
   border: none;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .letter-form input:hover,
 .letter-form textarea:hover {
   background-color: #eaeaea;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .letter-form input:focus,
 .letter-form textarea:focus {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
 
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 1;
 
   outline-width: 3px;
@@ -882,11 +780,11 @@ body > * > * > * > * {
 .letter-form textarea:invalid:not(:placeholder-shown) {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'open_sansregular', sans-serif;
+  font-family: "open_sansregular", sans-serif;
   color: #464646;
 
   background-color: #f6dada;
-  opacity: .5;
+  opacity: 0.5;
 
   outline: none;
 }
