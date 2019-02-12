@@ -13,18 +13,18 @@
 		font-style: normal;
 }
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-light-webfont.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+		font-family: 'open_sanslight';
+		src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+				 url('../fonts/opensans-light-webfont.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
 }
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+		font-family: 'open_sansregular';
+		src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+				 url('../fonts/opensans-regular-webfont.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
 }
 
 html {
@@ -55,7 +55,7 @@ a {
 	text-decoration: none;
 }
 
-/*body > * {
+body > * {
 	background-color: rgba(255, 0, 0, 0.5);
 }
 body > * > * {
@@ -66,33 +66,34 @@ body > * > * > * {
 }
 body > * > * > * > * {
 	background-color: rgba(0, 255, 0, 0.5);
-}*/
+}
 
 /*Стили для Хедера*/
 
 .navigation {
-	color: #000000;
+  color: #000;
 }
 
 .container {
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0 20px;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.navigation-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding: 60px;
 
-	background-color: #f7e296;
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 60px;
+
+  background-color: #f7e296;
 }
 
 .header-logo {
-	flex-basis: 100%;
-	margin-bottom: 35px;
+  flex-basis: 100%;
+  margin-bottom: 35px;
 }
 
 .header-logo img {
@@ -235,12 +236,13 @@ body > * > * > * > * {
 }
 
 .slider-item-feature {
-	font-size: 13px;
-	line-height: 20px;
-	color: #464646;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
 
-	background-color: #ffffff;
+  background-color: #fff;
 }
+
 
 .slider-button-list {
 	list-style: none;
@@ -250,35 +252,35 @@ body > * > * > * > * {
 
 
 .popular-goods-list {
-	display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  text-align: center;
   margin: 0;
   padding: 0;
 
-	font-family: "Gilroy ExtraBold", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  font-family: 'Gilroy ExtraBold', sans-serif;
+  text-align: center;
   list-style: none;
+  color: #000;
 }
 
 .popular-goods-item {
-	flex-basis: 160px;
+  flex-basis: 160px;
 
-	background-color: #f7e296;
+  background-color: #f7e296;
 }
 
 .popular-goods-product {
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .popular-goods-foto {
 	flex-basis: 160px;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .popular-goods-foto img {
@@ -289,9 +291,9 @@ body > * > * > * > * {
 	margin: 0;
 	padding-top: 30px;
 	text-align: left;
-  color: #000000;
+	color: #000000;
 
-  background-color: white;
+	background-color: #ffffff;
 }
 
 .popular-goods-item:hover {
@@ -301,8 +303,6 @@ body > * > * > * > * {
 .popular-goods-item:active {
 	opacity: 0.3;
 }
-
-
 
 /*Стили для блока услуги*/
 
@@ -426,9 +426,9 @@ body > * > * > * > * {
 
 .specification-options {
 	display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  
+	flex-direction: column;
+	align-items: flex-start;
+	
 
 	background-color: #efefef;
 }
@@ -460,20 +460,20 @@ body > * > * > * > * {
 
 .specification-sorting-title {
 	display: flex;
- 	
+	
 }
 
 .specification-sorting-list {
 	display: flex;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog-list {
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 70px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 70px;
 }
 
 .catalog-list .catalog-list-item:nth-child(odd) {
@@ -652,9 +652,9 @@ body > * > * > * > * {
 
 .catalog-pagination-list {
 	display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog-pagination {
