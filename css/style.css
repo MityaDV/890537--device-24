@@ -74,13 +74,24 @@ body > * > * > * > * {
   background-color: rgba(0, 255, 0, 0.5);
 }*/
 
-/*Стили для списков*/
+/*Класс для списков*/
 
 .page-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+/*Класс для шрифта*/
+
+.page-font {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "gilroyextrabold", sans-serif;
+  letter-spacing: 3.6px;
+
+  text-transform: uppercase;
 }
 
 /*Стили для Хедера*/
@@ -94,7 +105,6 @@ body > * > * > * > * {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .navigation-wrapper {
   display: flex;
@@ -126,6 +136,8 @@ body > * > * > * > * {
 }
 
 .header-form input {
+  padding: 0;
+
   font: inherit;
 
   background-color: #f7e296;
@@ -182,14 +194,8 @@ body > * > * > * > * {
   opacity: 0.3;
 }
 
-.site-navigation-catalog,
-.site-navigation {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
-  letter-spacing: 3.6px;
-
-  text-transform: uppercase;
+.catalog-menu-list {
+  line-height: 36px;
 }
 
 /*Cтили для слайдера*/
@@ -199,10 +205,12 @@ body > * > * > * > * {
 
   font-size: 47px;
   line-height: 56px;
-  font-family: "Gilroy ExtraBold", sans-serif;
+  letter-spacing: 0.5px;
   color: #000000;
 
   background-color: #ffffff;
+
+  text-transform: none;
 }
 
 .slider-item-number {
@@ -210,39 +218,49 @@ body > * > * > * > * {
 
   font-size: 179px;
   line-height: 179px;
-  font-family: "Gilroy ExtraBold", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.8px;
   color: #ffffff;
 
   background-color: #f7e296;
 }
 
 .slider-item-text {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 0.15px;
   color: #464646;
+
+  text-transform: none;
 }
 
 .btn {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
-  letter-spacing: 3.6px;
+  font-weight: 800;
   color: #000000;
-
-  text-transform: uppercase;
 }
 
 .slider-item-value {
   font-size: 36px;
   line-height: 48px;
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "gilroylight", sans-serif;
+  letter-spacing: 0.4px;
+
+  text-transform: none;
 }
 
 .slider-item-feature {
   font-size: 13px;
   line-height: 20px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.13px;
   color: #464646;
 
   background-color: #ffffff;
+
+  text-transform: none;
 }
+
 
 /*Стили блока популярные товары*/
 
@@ -250,12 +268,6 @@ body > * > * > * > * {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
-  text-align: center;
-  color: #000000;
 }
 
 .popular-goods-item {
@@ -265,7 +277,6 @@ body > * > * > * > * {
 }
 
 .popular-goods-product {
-  display: flex;
   flex-direction: column;
 }
 
@@ -288,9 +299,12 @@ body > * > * > * > * {
   padding-top: 30px;
 
   text-align: left;
+  letter-spacing: 0.18px;
   color: #000000;
 
   background-color: #ffffff;
+
+  text-transform: none;
 }
 
 .popular-goods-item:hover {
@@ -313,13 +327,22 @@ body > * > * > * > * {
   background-color: #000000;
 }
 
-.title {
+.title-accent {
   margin: 0;
 
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy ExtraBold", sans-serif;
+  letter-spacing: 0.5px;
   color: #000000;
+}
+
+.services-text {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.15px;
+
+  text-transform: none;
 }
 
 /*Стили блока партнеров*/
@@ -338,7 +361,6 @@ body > * > * > * > * {
 .info-item {
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy ExtraBold", sans-serif;
   letter-spacing: 0;
   color: #000000;
 }
@@ -346,6 +368,25 @@ body > * > * > * > * {
 .info-wrapper h2,
 .contacts-wrapper h2 {
   margin-top: 50px;
+
+  text-transform: none;
+}
+
+.info-text {
+  margin: 0;
+
+  letter-spacing: 0;
+}
+
+.info-list {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: 0;
+
+  text-transform: none;
 }
 
 .info-contacts-wrapper {
@@ -372,6 +413,13 @@ body > * > * > * > * {
 
 .title-page {
   padding-left: 60px;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+  letter-spacing: 0.47px;
+  text-transform: none;
+  margin: 0;
+
 }
 
 .breadcrumbs-list {
@@ -384,14 +432,30 @@ body > * > * > * > * {
   margin-right: 40px;
 }
 
-.breadcrumbs-active,
-.breadcrumbs-item a {
+
+.breadcrumbs-item {
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: 0.14px;
   color: #000000;
 
   opacity: 0.3;
 }
+
+.breadcrumbs-item  a {
+	color: #000000;
+	
+	background: #ffffff;
+}
+
+.breadcrumbs-item:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs-item:active {
+	opacity: 0.1;
+}
+
 
 /*Cтили для фильтров*/
 
@@ -411,6 +475,15 @@ body > * > * > * > * {
   background-color: #ebebeb;
 }
 
+.specification-filters-title h2,
+.specification-sorting-title h2 {
+  margin: 0;
+
+  font-size: 16px;
+  letter-spacing: 3.2px;
+  color: #000000;
+}
+
 .specification-options {
   display: flex;
   flex-direction: column;
@@ -426,56 +499,28 @@ body > * > * > * > * {
   padding: 0;
 }
 
-.specification-sorting-title,
-.specification-sorting-list {
-  display: flex;
-}
 
-.catalog-list {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 70px;
-}
 
 .specification-options-price legend,
 .specification-options-colors legend,
 .specification-options-bt legend {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
+  letter-spacing: 0.18px;
+  text-transform: none;
   color: #000000;
 }
 
 .filters-colors-item label,
 .filters-bt-item label {
+	font-family: "open_sanslight", sans-serif;
   font-size: 14px;
   line-height: 40px;
+  letter-spacing: 0.14px;
   color: #000000;
+  text-transform: none;
 }
 
 .filters-colors-item input:checked:hover,
-.filters-colors-item input:hover {
-  color: #000000;
-
-  opacity: 0.6;
-}
-.filters-colors-item input:checked:active,
-.filters-colors-item input:active {
-  color: #000000;
-
-  opacity: 1;
-}
-
-
-.filters-colors-item input:disabled,
-.filters-colors-item input:checked:disabled  {
-  color: #000000;
-
-  opacity: 0.25;
-}
-
-
+.filters-colors-item input:hover,
 .filters-bt-item input:checked:hover,
 .filters-bt-item input:hover {
   color: #000000;
@@ -483,6 +528,8 @@ body > * > * > * > * {
   opacity: 0.6;
 }
 
+.filters-colors-item input:checked:active,
+.filters-colors-item input:active,
 .filters-bt-item input:checked:active,
 .filters-bt-item input:active {
   color: #000000;
@@ -490,8 +537,10 @@ body > * > * > * > * {
   opacity: 1;
 }
 
+.filters-colors-item input:disabled,
+.filters-colors-item input:checked:disabled,
 .filters-bt-item input:disabled,
-.filters-bt-item input:checked:disabled  {
+.filters-bt-item input:checked:disabled {
   color: #000000;
 
   opacity: 0.25;
@@ -502,41 +551,19 @@ body > * > * > * > * {
   border: none;
 }
 
-.catalog-list-item img:hover {
-  opacity: 0.7;
-
-  cursor: pointer;
-}
-
-.catalog-list-item h3 {
-  margin: 0;
-
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
-  color: #000000;
-}
-
-.catalog-list-item .item-price {
-  font-size: 16px;
-  line-height: 24px;
-  color: #464646;
-}
-
-.specification-filters-title h2,
-.specification-sorting-title h2 {
-  margin: 0;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
-  letter-spacing: 3.6px;
-  color: #000000;
-
-  text-transform: uppercase;
-}
-
 /*Cтили для блока сортировки*/
+
+.specification-sorting-title {
+  display: flex;
+  align-items: center;
+}
+
+.specification-sorting-list li {
+	display: inline-block;
+	margin-right: 20px;
+	font-family: "open_sansregular", sans-serif;
+	font-weight: 400;
+}
 
 .specification-sorting-item a {
   font-size: 14px;
@@ -547,10 +574,6 @@ body > * > * > * > * {
   opacity: 0.3;
 }
 
-.specification-sorting-list a {
-  opacity: 0.3;
-}
-
 .specification-sorting-item a:hover {
   opacity: 0.6;
 }
@@ -558,7 +581,6 @@ body > * > * > * > * {
 .specification-sorting-item a:active {
   opacity: 1;
 }
-
 .specification-sorting-up,
 .specification-sorting-down {
   opacity: 0.2;
@@ -574,6 +596,38 @@ body > * > * > * > * {
   opacity: 1;
 }
 
+.catalog-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 70px;
+}
+
+.catalog-list-item img:hover {
+  opacity: 0.7;
+
+  cursor: pointer;
+}
+
+.catalog-list-item h3 {
+  margin: 0;
+  letter-spacing: 0.18px;
+  text-transform: none;
+  
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.item-price {
+	font-family: "gilroylight", sans-serif ;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+/*Стили для фильтра покупки*/
 .btn-catalog-order,
 .btn-catalog-compare {
   background-color: transparent;
@@ -589,14 +643,12 @@ body > * > * > * > * {
 }
 
 .btn-catalog-compare {
+	font-family: "open_sanslight", sans-serif;
   font-size: 13px;
   line-height: 20px;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.26px;
+  letter-spacing: 0.13px;
 
   opacity: 0.5;
-
-  text-transform: unset;
 }
 
 .btn-catalog-compare:hover {
@@ -607,22 +659,21 @@ body > * > * > * > * {
   opacity: 0.2;
 }
 
+/*Стили для пагинатора*/
 .catalog-pagination-list {
   display: flex;
   justify-content: space-between;
 }
 
-.catalog-pagination {
+.catalog-pagination-list {
   font-size: 16px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
-
+  letter-spacing: 3.2px;
   background-color: #ebebeb;
 }
 
 .catalog-pagination-back,
 .catalog-pagination-next {
-  letter-spacing: 3.6px;
+  letter-spacing: 3.2px;
 
   background-color: transparent;
   border: none;
@@ -684,6 +735,10 @@ body > * > * > * > * {
   background-color: #464646;
 }
 
+.footer-contacts p {
+  margin: 0;
+}
+
 .footer-contacts a {
   color: #ffffff;
 }
@@ -702,6 +757,7 @@ body > * > * > * > * {
 
 .footer-actions a {
   line-height: 36px;
+  letter-spacing: 0.15px;
   color: #ffffff;
 
   opacity: 0.7;
@@ -711,17 +767,14 @@ body > * > * > * > * {
   opacity: 1;
 }
 
-.footer-actions a:active {
-  opacity: 0.3;
-}
-
 .btn-html-academy:hover,
 .footer-logo-active img:hover {
   opacity: 0.6;
 }
 
 .btn-html-academy:active,
-.footer-logo-active img:active {
+.footer-logo-active img:active,
+.footer-actions a:active {
   opacity: 0.3;
 }
 
@@ -736,18 +789,33 @@ body > * > * > * > * {
   background-color: #ffffff;
 }
 
-.letter-form label{
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy ExtraBold", sans-serif;
+.letter-form p {
+  margin: 0;
+}
+
+.letter-form label {
+  font-weight: 800;
+  letter-spacing: 0;
   color: #000000;
+
+  text-transform: none;
+}
+
+.letter-form input,
+.letter-form textarea,
+.letter-form input:focus,
+.letter-form textarea:focus,
+.letter-form input:invalid:not(:placeholder-shown),
+.letter-form textarea:invalid:not(:placeholder-shown) {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "open_sansregular", sans-serif;
 }
 
 .letter-form input,
 .letter-form textarea {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "open_sansregular", sans-serif;
+  padding: 0;
+
   color: #464646;
 
   background-color: #f2f2f2;
@@ -763,9 +831,6 @@ body > * > * > * > * {
 
 .letter-form input:focus,
 .letter-form textarea:focus {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Open Sans", sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -778,9 +843,6 @@ body > * > * > * > * {
 
 .letter-form input:invalid:not(:placeholder-shown),
 .letter-form textarea:invalid:not(:placeholder-shown) {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "open_sansregular", sans-serif;
   color: #464646;
 
   background-color: #f6dada;
@@ -795,6 +857,9 @@ body > * > * > * > * {
 }
 
 .btn-letter-send {
+  margin: 0;
+  padding: 0;
+
   background-color: transparent;
   border: none;
 }
