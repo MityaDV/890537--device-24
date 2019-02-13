@@ -412,14 +412,15 @@ body > * > * > * > * {
 /*Cтили страницы каталога*/
 
 .title-page {
+  margin: 0;
   padding-left: 60px;
+
   font-size: 47px;
   line-height: 48px;
-  color: #000000;
   letter-spacing: 0.47px;
-  text-transform: none;
-  margin: 0;
+  color: #000000;
 
+  text-transform: none;
 }
 
 .breadcrumbs-list {
@@ -443,17 +444,17 @@ body > * > * > * > * {
 }
 
 .breadcrumbs-item  a {
-	color: #000000;
-	
-	background: #ffffff;
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .breadcrumbs-item:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .breadcrumbs-item:active {
-	opacity: 0.1;
+  opacity: 0.1;
 }
 
 
@@ -505,17 +506,19 @@ body > * > * > * > * {
 .specification-options-colors legend,
 .specification-options-bt legend {
   letter-spacing: 0.18px;
-  text-transform: none;
   color: #000000;
+
+  text-transform: none;
 }
 
 .filters-colors-item label,
 .filters-bt-item label {
-	font-family: "open_sanslight", sans-serif;
   font-size: 14px;
   line-height: 40px;
+  font-family: "open_sanslight", sans-serif;
   letter-spacing: 0.14px;
   color: #000000;
+
   text-transform: none;
 }
 
@@ -559,10 +562,11 @@ body > * > * > * > * {
 }
 
 .specification-sorting-list li {
-	display: inline-block;
-	margin-right: 20px;
-	font-family: "open_sansregular", sans-serif;
-	font-weight: 400;
+  display: inline-block;
+  margin-right: 20px;
+
+  font-weight: 400;
+  font-family: "open_sansregular", sans-serif;
 }
 
 .specification-sorting-item a {
@@ -611,19 +615,22 @@ body > * > * > * > * {
 
 .catalog-list-item h3 {
   margin: 0;
+
   letter-spacing: 0.18px;
-  text-transform: none;
-  
   color: #000000;
+
   background-color: #ffffff;
+
+  text-transform: none;
 }
 
 .item-price {
-	font-family: "gilroylight", sans-serif ;
   font-size: 16px;
   line-height: 24px;
+  font-family: "gilroylight", sans-serif ;
   letter-spacing: 0.16px;
   color: #464646;
+
   background-color: #ffffff;
 }
 
@@ -643,9 +650,9 @@ body > * > * > * > * {
 }
 
 .btn-catalog-compare {
-	font-family: "open_sanslight", sans-serif;
   font-size: 13px;
   line-height: 20px;
+  font-family: "open_sanslight", sans-serif;
   letter-spacing: 0.13px;
 
   opacity: 0.5;
@@ -668,6 +675,7 @@ body > * > * > * > * {
 .catalog-pagination-list {
   font-size: 16px;
   letter-spacing: 3.2px;
+
   background-color: #ebebeb;
 }
 
