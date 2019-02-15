@@ -72,7 +72,7 @@ body > * > * > * {
   background-color: rgba(0, 240, 255, 0.5);
 }
 body > * > * > * > * {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.4);
 }*/
 
 /*Класс для списков*/
@@ -95,6 +95,9 @@ body > * > * > * > * {
   text-transform: uppercase;
 }
 
+.visually-hidden {
+  display: none;
+}
 /*Стили для Хедера*/
 
 .navigation {
@@ -112,14 +115,16 @@ body > * > * > * > * {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: 35px;
   padding: 60px;
+  padding-bottom: 0;
 
   background-color: #f7e296;
 }
 
 .header-logo {
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .header-logo img {
@@ -150,16 +155,19 @@ body > * > * > * > * {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
+  margin-bottom: 40px;
 }
 
 .site-navigation-catalog {
   flex-basis: 50%;
+  margin-bottom: 55px;
 }
 
 .site-navigation {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
+  margin-bottom: 55px;
 }
 
 .header-logo img:hover,
@@ -195,6 +203,11 @@ body > * > * > * > * {
   opacity: 0.3;
 }
 
+.catalog-menu {
+  display: none;
+  margin-bottom: 35px;
+}
+
 .catalog-menu-list {
   line-height: 36px;
 }
@@ -203,6 +216,7 @@ body > * > * > * > * {
 
 .slider-list-item {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .slider-foto-wrapper {
@@ -248,10 +262,10 @@ body > * > * > * > * {
   padding-right: 40px;
 }*/
 
-/*конец второго варианта*/
-
 .title-accent-light {
   margin: 0;
+  margin-bottom: 30px;
+  padding-top: 85px;
 
   font-size: 47px;
   line-height: 56px;
@@ -264,6 +278,7 @@ body > * > * > * > * {
 }
 
 .slider-item-number {
+  display: none;
   margin: 0;
 
   font-size: 179px;
@@ -277,6 +292,7 @@ body > * > * > * > * {
 
 .slider-item-text {
   margin: 0;
+  margin-bottom: 50px;
 
   font-size: 15px;
   line-height: 30px;
@@ -285,6 +301,9 @@ body > * > * > * > * {
   color: #464646;
 
   text-transform: none;
+}
+.btn-slider{
+  margin-bottom: 60px;
 }
 
 .btn {
@@ -319,6 +338,7 @@ body > * > * > * > * {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 85px;
 }
 
 .popular-goods-item {
@@ -372,6 +392,12 @@ body > * > * > * > * {
   background-color: #e5e5e5;
 }
 
+.services-list {
+  margin: 0;
+  margin-bottom: 100px;
+  padding-top: 70px;
+}
+
 .btn-services-active {
   color: #f7e184;
 
@@ -399,7 +425,7 @@ body > * > * > * > * {
 /*Стили блока партнеров*/
 
 .partners {
-  margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 .partners-list {
@@ -417,13 +443,15 @@ body > * > * > * > * {
 }
 
 .info-item-wrapper h2 {
-  margin-top: 50px;
+  margin-bottom: 55px;
+  padding-top: 50px;
 
   text-transform: none;
 }
 
 .info-text {
   margin: 0;
+  margin-bottom: 35px;
 
   letter-spacing: 0;
 }
@@ -434,6 +462,7 @@ body > * > * > * > * {
 
 .info-list {
   margin: 0;
+  padding-top: 25px;
 
   font-size: 16px;
   line-height: 40px;
@@ -468,6 +497,7 @@ body > * > * > * > * {
 .breadcrumbs-list {
   display: flex;
   flex-basis: 100%;
+  margin-bottom: 45px;
   padding-left: 60px;
 }
 
@@ -500,41 +530,35 @@ body > * > * > * > * {
 
 /*Cтили блока с фильтрами и сортировки*/
 
-		/*Стили фона фильтров и сортировки*/
-.specification-wrapper-color {
-	background: linear-gradient(to right, #dbdbdb 50%, #ebebeb 50%); ; 
-}
-
+/*Стили фона фильтров и сортировки*/
 .specification-sorting-color {
-	background-color: ;
+  background: linear-gradient(to right, #dbdbdb 38%, #ebebeb 38%);
 }
 
 .specification-options-color {
-	background-color: #eeeeee;
+  background: linear-gradient(to right, #efefef 38%, #ffffff 38%);
 }
 
 .catalog-list-item img {
-	width: 360px;
-	height: 380px;
-	background-color: #efefef
+  width: 360px;
+  height: 380px;
+
+  background-color: #efefef;
+  border: none;
 }
-
-
-
- 		/*конец фильтров фона*/
+/*конец фильтров фона*/
 
 .specification-title {
   margin: 0;
-  padding-left: 60px;
 
   font-size: 16px;
   letter-spacing: 3.2px;
   color: #000000;
 }
 
-.specification-sorting-list,
-.specification-options {
-	padding-left: 60px;
+.specification-sorting-list {
+  display: flex;
+  padding-left: 60px;
 }
 
 .specification-sorting-item a {
@@ -568,6 +592,26 @@ body > * > * > * > * {
 .specification-sorting-up:active,
 .specification-sorting-down:active {
   opacity: 1;
+}
+
+.specification-options-wrapper {
+  display: flex;
+}
+
+.specification-options {
+  flex-basis: 30%;
+  margin-left: 60px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+}
+
+.catalog-list-item {
+  padding-top: 70px;
 }
 
 .specification-options fieldset {
@@ -633,21 +677,10 @@ body > * > * > * > * {
   border: none;
 }
 
-.catalog-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 70px;
-}
-
 .catalog-list-item img:hover {
   opacity: 0.7;
 
   cursor: pointer;
-}
-
-.catalog-title-item li {
-  display: inline-flex;
 }
 
 .item-name {
@@ -671,14 +704,18 @@ body > * > * > * > * {
   text-transform: none;
 }
 
+
 /*Стили для пагинатора*/
+
+.catalog-pagination {
+  flex-basis: 100%;
+  margin-top: 35px;
+}
 
 .catalog-pagination-list {
   display: flex;
   justify-content: space-between;
-}
 
-.catalog-pagination-list {
   font-size: 16px;
   letter-spacing: 3.2px;
 
@@ -721,11 +758,24 @@ body > * > * > * > * {
 }
 
 /*Стили футера*/
+.footer {
+  margin-top: 90px;
+  padding: 60px 0;
+
+  letter-spacing: 0;
+  color: #ffffff;
+
+  background-color: #464646;
+}
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-user-actions {
+  margin-bottom: 30px;
 }
 
 .footer-actions li {
@@ -735,18 +785,18 @@ body > * > * > * > * {
 .footer-actions li:not(:last-child) {
   padding-right: 30px;
 }
+.footer-site-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
 
 .footer-social li {
   display: inline-block;
 }
 
-.footer {
-  padding: 60px 0;
-
-  letter-spacing: 0;
-  color: #ffffff;
-
-  background-color: #464646;
+.footer-contacts {
+  margin-bottom: 70px;
 }
 
 .footer-contacts p {
