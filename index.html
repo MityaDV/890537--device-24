@@ -21,8 +21,8 @@
         <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="form-search"></label>
-            <input class="header-form-search" id="form-search" type="search" name="header-search" placeholder="Поиск по сайту">
-            <button class="header-form-searching" type="submit"></button>
+            <input class="header-form-search" id="form-search" type="search" autocomplete="off" name="header-search" placeholder="Поиск по сайту">
+            <button class="header-form-searching" type="submit">Найти</button>
           </p>
         </form>
         <ul class="header-actions page-list">
@@ -37,7 +37,35 @@
           </li>
         </ul>
         <div class="site-navigation-catalog">
-          <a class="page-font" href="#">Каталог товаров</a>
+          <a class="site-navigation-link page-font" href="#">Каталог товаров</a>
+        </div>
+        <div class="navigation-submenu-wrapper">
+          <div class="navigation-submenu ">
+            <ul class="submenu-list page-list">
+              <li class="submenu-item">
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="submenu-list page-list">
+              <li class="submenu-item">
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="submenu-item">
+                <a href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="submenu-list page-list">
+              <li class="submenu-item">
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="site-navigation page-list page-font">
           <li class="site-navigation-item site-navigation-delivery">
@@ -50,32 +78,6 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <div class="catalog-menu">
-          <ul class="catalog-menu-list page-list">
-            <li class="catalog-menu-item">
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li class="catalog-menu-item">
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li class="catalog-menu-item">
-              <a href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="catalog-menu-list page-list">
-            <li class="catalog-menu-item">
-              <a href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="catalog-menu-item">
-              <a href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="catalog-menu-list page-list">
-            <li class="catalog-menu-item">
-              <a href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
   </header>

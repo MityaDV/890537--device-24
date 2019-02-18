@@ -119,8 +119,8 @@ a {
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 45px;
-  padding-left: 60px;
   padding-right: 60px;
+  padding-left: 60px;
 
   background-color: #f7e296;
 }
@@ -138,7 +138,7 @@ a {
 
 .header-form {
   flex-basis: 355px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .header-form p {
@@ -173,12 +173,67 @@ a {
   background-position: 0 0;
 }
 
+.header-form input:focus {
+  color: #000000;
+
+  background-color: #f7e296;
+  opacity: 1;
+
+  outline: none;
+  box-shadow: 0 2px 0 0 #000000;
+}
+
+
+.header-form  input:focus + .header-form-searching {
+  opacity: 1;
+}
+
+.header-form-searching  {
+  position: absolute;
+  top: -16px;
+  left: 330px;
+
+  width: 85px;
+  height: 50px;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.15px;
+
+  background: transparent;
+  border: 2px solid black;
+  opacity: 0;
+
+  outline: none;
+}
+
+
+.header-form-searching:hover {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.header-form-searching:active {
+  opacity: 0.3;
+}
+
+/*Скрытие крестика поля поиска*/
+.header-form input::-webkit-search-decoration,
+.header-form input::-webkit-search-cancel-button,
+.header-form input::-webkit-search-results-button,
+.header-form input::-webkit-search-results-decoration {
+  display: none;
+}
+
 .header-actions {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .header-actions-link {
@@ -237,17 +292,17 @@ a {
 .site-navigation-catalog {
   position: relative;
 
-  flex-basis: 50%;
-  padding-bottom: 165px;
+  margin-bottom: 165px;
 }
 
-.site-navigation-catalog a {
+.site-navigation-link {
+  display: block;
   padding-right: 30px;
 }
 
-.site-navigation-catalog a::after {
+.site-navigation-link::after {
   position: absolute;
-  top: 6px;
+  top: 4px;
   left: 230px;
 
   content: "";
@@ -259,16 +314,47 @@ a {
   background-position: 0 0;
 }
 
+.navigation-submenu-wrapper {
+  position: absolute;
+  top: 146px;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  padding-top: 30px;
+
+  background-color: #f7e296;
+  opacity: 0;
+}
+
+.navigation-submenu {
+  display: flex;
+  min-height: 130px;
+  padding-left: 60px;
+}
+
+.submenu-list {
+  padding-right: 50px;
+
+  line-height: 36px;
+}
+
+.site-navigation-catalog:hover + .navigation-submenu-wrapper {
+  opacity: 1;
+}
+
+
+.site-navigation-catalog.inner-page,
+.site-navigation.inner-page {
+  margin-bottom: 55px;
+}
+
 .site-navigation {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
-  padding-bottom: 165px;
-}
-
-.site-navigation-catalog.inner-page,
-.site-navigation.inner-page {
-  padding-bottom: 55px;
+  flex-wrap: wrap;
+  margin-bottom: 165px;
 }
 
 .header-logo img:hover,
@@ -276,63 +362,14 @@ a {
 .header-actions a:hover,
 .site-navigation-catalog a:hover,
 .site-navigation a:hover,
-.catalog-menu-list a:hover {
+.submenu-list a:hover {
   opacity: 0.6;
-}
-
-.header-form input:focus {
-  color: #000000;
-
-  background-color: #f7e296;
-  border-bottom: 2px solid black;
-  opacity: 1;
-
-  outline: none;
-}
-
-.header-form .header-form-searching {
-  background: transparent;
-  border: none;
-
-  outline: none;
-}
-
-.header-form .header-form-searching::after {
-  position: absolute;
-  top: -15px;
-  left: 330px;
-
-  content: "Найти";
-  align-items: center;
-  width: 85px;
-  height: 49px;
-
-  font-size: 15px;
-  line-height: 30px;
-  font-family: "open_sanslight", sans-serif;
-  letter-spacing: 0.15px;
-  color: #000000;
-
-  background-color: #f7e296;
-  border: 2px solid black;
-}
-
-.header-form .header-form-searching:hover::after {
-  color: #ffffff;
-
-  background-color: #000000;
-}
-
-.header-form .header-form-searching:active::after {
-  color: #747474;
-
-  background-color: #000000;
 }
 
 .header-actions a,
 .site-navigation-catalog a,
 .site-navigation a,
-.catalog-menu-list a {
+.submenu-list a {
   color: #000000;
 }
 
@@ -340,31 +377,8 @@ a {
 .header-actions a:active,
 .site-navigation-catalog a:active,
 .site-navigation a:active,
-.catalog-menu-list a:active {
+.submenu-list a:active {
   opacity: 0.3;
-}
-
-.catalog-menu {
-  position: absolute;
-  top: 167px;
-  left: 0;
-  z-index: 2;
-
-  display: flex;
-  width: 100%;
-  padding-bottom: 37px;
-
-  background-color: #f7e296;
-}
-
-.catalog-menu-list {
-  padding-left: 60px;
-
-  line-height: 36px;
-}
-
-.catalog-menu-item a {
-  display: block;
 }
 
 /*Cтили для слайдера*/
