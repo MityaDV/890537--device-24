@@ -21,7 +21,7 @@
         <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="form-search"></label>
-            <input class="header-form-search" id="form-search" type="search" autocomplete="off" name="header-search" placeholder="Поиск по сайту">
+            <input class="header-form-search" id="form-search" type="text" autocomplete="off" name="header-search" placeholder="Поиск по сайту">
             <button class="header-form-searching" type="submit">Найти</button>
           </p>
         </form>
@@ -40,7 +40,7 @@
           <a class="site-navigation-link page-font" href="#">Каталог товаров</a>
         </div>
         <div class="navigation-submenu-wrapper">
-          <div class="navigation-submenu ">
+          <div class="navigation-submenu">
             <ul class="submenu-list page-list">
               <li class="submenu-item">
                 <a href="#">Виртуальная реальность</a>
@@ -111,6 +111,23 @@
                     <li>Материал</li>
                   </ul>
                 </ul>
+                <ul class="slider-button-list page-list">
+                  <li class="slider-button-item slider-button-active">
+                    <button>
+                      <img src="img/slider-button.svg" width="12" height="12" alt="Кнопка активного слайда">
+                    </button>
+                  </li>
+                  <li class="slider-button-item">
+                    <button>
+                      <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
+                    </button>
+                  </li>
+                  <li class="slider-button-item">
+                    <button>
+                      <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
+                    </button>
+                  </li>
+                </ul>
               </div>
           </li>
           <li class="slider-list-item">
@@ -127,6 +144,23 @@
                     <li>48 часов</li>
                     <li>Без подзарядки</li>
                   </ul>
+                </ul>
+                <ul class="slider-button-list page-list">
+                  <li class="slider-button-item slider-button-active">
+                    <button>
+                      <img src="img/slider-button.svg" width="12" height="12" alt="Кнопка активного слайда">
+                    </button>
+                  </li>
+                  <li class="slider-button-item">
+                    <button>
+                      <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
+                    </button>
+                  </li>
+                  <li class="slider-button-item">
+                    <button>
+                      <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
+                    </button>
+                  </li>
                 </ul>
               </div>
           </li>
@@ -149,28 +183,26 @@
                     <li>Радиус поражения</li>
                   </ul>
                 </ul>
+                <ul class="slider-button-list page-list">
+                  <li class="slider-button-item slider-button-active">
+                    <button>
+                      <img src="img/slider-button.svg" width="12" height="12" alt="Кнопка активного слайда">
+                    </button>
+                  </li>
+                  <li class="slider-button-item">
+                    <button>
+                      <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
+                    </button>
+                  </li>
+                  <li class="slider-button-item">
+                    <button>
+                      <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
+                    </button>
+                  </li>
+                </ul>
               </div>
           </li>
         </ul>
-        <div class="slider-button">
-          <ul class="slider-button-list page-list">
-            <li class="slider-button-item slider-button-active">
-              <button>
-                <img src="img/slider-button.svg" width="12" height="12" alt="Кнопка активного слайда">
-              </button>
-            </li>
-            <li class="slider-button-item">
-              <button>
-                <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
-              </button>
-            </li>
-            <li class="slider-button-item">
-              <button>
-                <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
-              </button>
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
     <!-- Блок популярные товары-->
@@ -229,48 +261,53 @@
       </div>
     </div>
     <!-- Блок услуги -->
-    <div class="services">
-      <div class="container">
-        <dl class="services-list page-font">
-          <dt class="services-item-delivery">
-            <a class="btn btn-services btn-services-active" href="#">Доставка</a>
-          </dt>
-          <dd>
-            <h2 class="title title-accent">Доставка</h2>
-            <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </dd>
-          <dt class="services-item-warranty">
-            <a class="btn btn-services" href="#">Гарантия</a>
-          </dt>
-          <dd>
-            <h2 class="title title-accent">Гарантия</h2>
-            <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </dd>
-          <dt class="services-item-credit">
-            <a class="btn btn-services" href="#">Кредит</a>
-          </dt>
-          <dd>
-            <h2 class="title title-accent">Кредит</h2>
-            <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </dd>
-        </dl>
+    <section class="services">
+      <div class="services-content container">
+        <div class="services-column-title">
+          <ul class="services-list page-font page-list">
+            <li class="services-item services-item-delivery">
+              <a class="btn btn-services" href="#">Доставка</a>
+            </li>
+            <li class="services-item services-item-warranty">
+              <a class="btn btn-services" href="#">Гарантия</a>
+            </li>
+            <li class="services-item services-item-credit">
+              <a class="btn btn-services" href="#">Кредит</a>
+            </li>
+          </ul>
+        </div>
+        <div class="services-column-description">
+          <h2 class="title title-accent page-font">Доставка</h2>
+          <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="services-column visually-hidden">
+          <h2 class="title title-accent page-font">Гарантия</h2>
+          <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="services-column visually-hidden">
+          <h2 class="title title-accent page-font">Кредит</h2>
+          <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
+        <div class="services-column-foto">
+          <img src="img/delivery.svg" width=136px height="164px" alt="Сервис">
+
       </div>
-    </div>
+    </section>
     <!-- Блок партнёры -->
     <div class="partners">
       <div class="container">
         <ul class="partners-list page-list">
           <li class="partners-item">
-            <img src="img/logo-1-colorless.png" width="260" height="100" alt="dji">
+            <a class="partners-item-foto" href="#"></a>
           </li>
           <li class="partners-item">
-            <img src="img/logo-2-colorless.png" width="260" height="100" alt="SPGadgets">
+            <a class="partners-item-foto" href="#"></a>
           </li>
           <li class="partners-item">
-            <img src="img/logo-3-colorless.png" width="260" height="100" alt="GoPro">
+            <a class="partners-item-foto" href="#"></a>
           </li>
           <li class="partners-item">
-            <img src="img/logo-4-colorless.png" width="260" height="100" alt="vive">
+            <a class="partners-item-foto" href="#"></a>
           </li>
         </ul>
       </div>
@@ -341,16 +378,28 @@
       <div class="footer-content footer-copyright">
         <ul class="footer-social page-list">
           <li>
-            <a class="btn social-btn-fb" href="#" aria-label="Магазин Девайс на Фейсбуке">Фейсбук</a>
+            <a class="social-button" href="#" aria-label="Магазин Девайс на Фейсбуке">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><g><g opacity="" transform="translate(-649 -2696)"><image width="32" height="32" transform="translate(649 2696)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACFklEQVRYR8WXO2uVQRCGn7fQygvBysoE7IISBEHsUlkasImksIiQ+AcC+QWCNnZGsBKDNkKqgJWdWIiIwS4QrKzMRWNlMTKfu2HP8Rz2m5wTvm13duaZ2+6saLnM7AIwB8wCV4Ep4Ew6fgjsAF+Ad8CGpB9tVKsmZGZubBW4A5yqyaf9P8Ab4KEkhxq6hgKY2VngEbAEVEGHWDDgGbAi6dcgmYGKzWzawwhcbulxTWzb0yfpa7/gfwBmdgN4C5yraQ3u/wRuSfpQnusBSJ6/PwHj2aZD3CwjcQSQcv4pGPY14DGwW3j1reKAp+NarokS4CmwHAjrC0n3+uXNbB84X9GzJumByzQAqdU+B6v9uqSPxwTw7pjxFs0Ar4D5gPcuOiHJvXUHnhRn3bPTLXS9lnRX6Yb7Hrhksu4SwD2KLr+sLjrAIvA8erovAscBcJP3HeAlsNASwNsoG7sk6SCloElFWrUCLE2tO4Df1VdaAhyFfZi8mUWiseUAfkfnV63GMW6AQweIEI8bgCjAJuDV62tB0u9UA/5w5XW7FsZyP5qC8uyobei6mhREinDcAE0RRtpw3ABNG3Z+Efmw2d1VnKp41Mco0so5jf8eowTgk2/0OR6lC3qf4wQRHUgmgeYtAPYivQ/0DiQJwMfw6EgWtNuIDx7JEoSP490MpdmVTsfyAqK7j0kB0d3XrKyszj6n/eV9Ut/zv7VFE8hfmH3+AAAAAElFTkSuQmCC"/></g></g></svg>
+            </a>
           </li>
           <li>
-            <a class="btn social-btn-in" href="#" aria-label="Магазин Девайс в Инстаграмме">Инстаграм</a>
+            <a class="social-button" href="#" aria-label="Магазин Девайс в Инстаграмме">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><g><g opacity="" transform="translate(-704 -2696)"><image width="32" height="32" transform="translate(704 2696)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACfElEQVRYR82XTYhOYRTHf39lI0SysKOsiCaroZGUYqOmbHyUJqaG7CxEWVkQC1kNI2VjIqVYSg0LCSGZrHyMlGyImLIQf53b8+rO673vvRfjerb3POf87vl+RMVjewHQD6wHVgJLgNnp+iQwATwBbgJXJb2volplQrbD2CFgCzCzTD59/wpcAY5JCqjCUwhgew5wHNgDlIIWWDAwAhyQ9LmTTEfFtpeHG4GlFf+4TOx5hE/S03bBXwBs9wLXgbllWmt+/wRslHQ3f28KQPrzO9NgvGUzINbkPfETIMX80V90e5GDIhyrWjmRBxgG9tZ06++Kn5GU2coAUqk9Lsj2Z8BuYLymtR7gPLC4w72ojp4o0RbARWBrgYFeSfdqGs/EbW8AbhTcvSRpm1KHe9ulycyX9LEMwPYm4GCSuy3pcNL9ruBuNKtFARDuPdfFQFWAgeTyUHVNUr/tecCHLroHA+ACsKMhgNEAiF69oi6A7bXAIPA9tdtwdV/S81rSWAUPjAdA9OjWVOvEkYXAdrTlN5K+2F4HjAEz0oWIZ5+k+7ZD10JJExUAJgMgSqLbaQHcAnZJeml7FNjedumspKFU0kcq5gB1AQYkvSoBWAYcrQNQNQThgWFJl0tCEFW1uSJAFoJKSWg7AGYBqyV9a0/CmHK2Y2GJefKiIkCWhJXKMAFE8sWCsS8g8jmQjEc/2VmjD2RlWKkR5QDC7kPgJPAgzY/YIfanXbF2I4pls7QV2z4VA6SsJdduxWloNDeM/otxnCBOpw24opf/SGzqQpIAYg1vbiVLELGON7OUthza6Fqeg2juYZKDiJw4AQz986dZW4tt5nHaXmTT9Tz/AQMWesiTHkNbAAAAAElFTkSuQmCC"/></g></g></svg>
+            </a>
           </li>
           <li>
-            <a class="btn social-btn-tv" href="#" aria-label="Магазин Девайс в Твиттере">Твиттер</a>
+            <a class="social-button" href="#" aria-label="Магазин Девайс в Твиттере">
+              <span class="visually-hidden">Твиттер</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><g><g opacity="" transform="translate(-758 -2696)"><image width="32" height="32" transform="translate(758 2696)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC1klEQVRYR8WXS4hOYRjHfw+5lHsWGrGgyZBcmpVLFhMlK8qGLE2YIgul2IkarITcsiTTREk2smAlC8nMuNSkUCTKArMg8ej/zXum85353nPO943xvdvzPO/zO8/9NUoed58LbAM6gJXAImB6UB8C3gD9wAPgtpl9KXO1FQm5u4wdAbYDk4rkw/dfwC2g28wEFT1RAHefAZwC9gGFoBELDlwGDpvZ91oyNS929+VyI9Ba8o+LxF4rfGb2Iis4CsDd1wD3gJlFt9b5/Ruw2cwep/WqAMKfPxoH44lNQaxLe2IEIMT86T90e8xBCkd7khNpgAtAV51ubVT8kplVbFUAQqk9G0O21wui6litEk0AbgA7ckqpqAwV2+Oh9n8ozsAJYCnwFpgPTM7c32NmOy10uI+RJjMIHAB6gVkRQHVBJdZA+ru7zwEWAj+Bl8CEjL6aVYsAdgNXI5ffMbOt7r4EkJfaa8gdNbPuWAzcfQNwMnglK9YpgGvArsgFg2bWFvJkItAJHASWpeTbzEyeGnXcfQpwFtgTuf+6ANSrV+Rk0dps83B3xVYNq0V/Z2ZKqloAApX7Y2dAAOrRyVTLCj4B5KHzZva77lR33wTcz9EbEkBN+qCkEdtqZn/qNR7Cth84l6dbBCDdM8ChRiDc/WYY41GGohAkilfCSP1a1hPuPhVQec8uCkFREkq/w8weljUe3K894mKBTiUJ88ow0X8ObDGz92UgQnPT7J9XIF8pw7xGlNZX51JH7IptN+HP5fq7wMYSsJVGpGUz1opfAZ+Ad4BKstfMPscudvcFQA+wvoTx4VYcqGPD6ANwLBiOJqC7a3WTJzU3ppUwLpHhYRQAtPnmjWM1IeVBHyAoDRY1L025VcDikkYTsepxHCCUscrc/3GqF5IAoDW8eStZgNA63pyldCQ4zVzLUxDNe5ikIJQTp4G9Y1hWG3uapcugaY/TbC2O1/P8LxH3IcgoLavXAAAAAElFTkSuQmCC"/></g></g></svg>
+            </a>
           </li>
         </ul>
-        <span><a class="btn btn-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></span>
+        <a class="btn-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="35" viewBox="0 0 27 35"><g><g transform="translate(-1273 -2694)"><image width="27" height="35" transform="translate(1273 2694)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAjCAYAAABl/XGVAAAD20lEQVRIS63XV6gkZRAF4G/NuuKas6KCAQwoYgIR05sIvhhWRDBhWnMWc845YsSIqA8q6JMBMYtZVBAEw5pzzsqB6qXvbPfcmas/DDPT3f9/Kpw6VT3N3GsJrIyVsApWbP3OtXyWxNeYXZ8P6/tj5PdH9f+b9vHTcEcdkENXxUIdBkz10q/4ADFidsD+GTjpT3wyYHE8iLWNxV9i6TIyUWgi0Rgc71fAfIOeBewnbFMh+Bx/T9WV1r55sGyl4nFMbzz7Dov/DwB9R3yLGVMBS8j2xpWYQIAhxo4NlvgfhtOwKL7A8bilI++DuGOBbYlrsB6ux9U4CbviWRyI1/6rZ2HcBdirDjsAz7UO3RZXYJ0y5mQk/2N5Fibtg/MxP06pHKUsBlfCe2iF9xccibsGQtsbxo1wLTbD/Ti86msysqauLsLueBIH483aNBdY1OMsHFRVPwsPT4bQcX+risK6uBRnVP3Oof4f+ApL4cICTUj6Vgx6DO/0PJDQ5pkz8SOWSTracvVEPfD2CN7cjD3KsLPxc8+e5YpAu+R+GywsC4VfHQFseeSAhD0RCUEe6ti3A67Cam2whPGzEs/UUCj8/RDQECf3L6vC3g0PFuj7WB2XY8ciy6bpJm25ilKfiiMQVQ+F7+4BjMUp7kVwAt4rUoRk92Fn/ICjcXvJWqc2hkVRi7AqJAiFB4mQay9WKFMaL+HW8iZ1+Qq2a2nnULmK2EYdUjcz6rtNhIYgl+AF3IsIQbMewE6t/0PBYuX0om4kKp/koiHCvMXc5KwNMiWwrXFTNb/T8XTlZONi3XUlT5v05HQsz8Kul7EnjsG75cn6SDgT2mFrLLAwLRoXqXmkCjNjQ8KbPN2JAPetexCDmzU0Z5mwQuk0x8ar0Pri6gLp0Gt0IKVeQ6oUe1tVRmqea1UZhMa34ZzqAvuX+rTxIncpibc6jJgAFtFds8a3rtAkpAnfguVxanBmPZhpLMWb+XNwLMwjEYtEZ+EoyG9YoNQ580VkpqtJhhTnVhnk0OxNbk/sGXyapho2Z2b5PRvWLrHcvix9o5j3VE/2o3PxJLlJQXetZmZpSPQoZgWsWWFPml0UPStT07Glk5Mwfc7t9sySi5+2NbYNlpuLFd3TpaMSYV0YeeMkU3JUZF+ch7yY/FUT2ITuMQjWmLhhzSGb14Xnq9dFYAdXe2bJvd6+2AeWTbkXa0OKjAuZ/5t5Mb0sUUg9he7xLK9QiUJkrvNdYRhY40HykPBktGvycAP2a+U3XeC4yfI7ClgDugUiwBu04vh6hfeZURg0DljOS+0cgqNKuvJy0VWTndj/Asd5FeCLQ2mOAAAAAElFTkSuQmCC"/></g></g></svg>
+        </a>
       </div>
     </div>
   </footer>
