@@ -348,11 +348,6 @@ a {
   visibility: visible;
 }
 
-.site-navigation-catalog.inner-page,
-.site-navigation.inner-page {
-  margin-bottom: 55px;
-}
-
 .site-navigation {
   display: flex;
   justify-content: space-between;
@@ -588,9 +583,6 @@ a {
 }
 
 .btn-services {
-  /*для псевдо*/
-  position: relative;
-
   width: 160px;
   margin: 0 0 30px 0;
 }
@@ -692,6 +684,19 @@ a {
 
 /*Стили блоков О нас и Контакты*/
 
+.info-contacts-wrapper {
+  display: flex;
+}
+
+.info-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 50%;
+  min-height: 590px;
+  margin-bottom: 65px;
+}
+
 .info-item {
   font-size: 16px;
   line-height: 40px;
@@ -699,46 +704,284 @@ a {
   color: #000000;
 }
 
-.info-item-wrapper h2 {
-  margin-bottom: 55px;
+.title-info {
+  position: relative;
+
   padding-top: 50px;
 }
 
-.info-text {
-  margin: 0;
-  margin-bottom: 35px;
+.title-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
 
-  letter-spacing: 0;
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+  opacity: 0;
+}
+
+.title-info:hover::before {
+  opacity: 1;
 }
 
 .info-more {
   max-width: 475px;
 }
 
+.info-text {
+  margin: 0;
+
+  letter-spacing: 0;
+}
+
 .info-list {
   margin: 0;
-  padding-top: 25px;
 
   font-size: 16px;
   line-height: 40px;
-  font-weight: 800;
   letter-spacing: 0;
 
   text-transform: none;
 }
-
-.info-contacts-wrapper {
-  display: flex;
+.contacts-actions-link img {
+  width: 560px;
+  height: 222px;
+}
+.btn-info,
+.btn-contacts {
+  width: 260px;
+}
+.btn-info:hover,
+.btn-contacts:hover {
+  background-color: #f0c52e;
 }
 
-.info-item-wrapper {
+.btn-info:active,
+.btn-contacts:active {
+  opacity: 0.3;
+}
+
+/*Стили футера*/
+.footer {
+  padding: 60px 0;
+
+  letter-spacing: 0;
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  margin-left: 500px;
+}
+
+.footer-logo-active img {
+  width: 163px;
+  height: 35px;
+}
+
+.footer-logo-active a {
+  position: relative;
+  display: block;
+  width: 163px;
+  height: 35px;
+}
+
+.footer-logo-active a::before {
+  content: "";
+  position: absolute;
+  top: 172px;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  opacity: 0;
+}
+
+.footer-logo-active a:hover::before {
+  opacity: 1;
+}
+
+
+.footer-user-actions {
+  margin-bottom: 30px;
+}
+
+.footer-actions li {
+  display: inline-block;
+}
+
+.footer-actions li:not(:last-child) {
+  padding-right: 30px;
+}
+
+.footer-actions-link {
+  position: relative;
+
+  padding-left: 30px;
+}
+
+.footer-actions-enter::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-actions-compare::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-actions-order::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.footer-site-navigation {
+  display: flex;
+  justify-content: space-between;
   flex-basis: 50%;
+}
+
+.footer-social li {
+  display: inline-block;
+}
+
+.footer-contacts {
+  margin-bottom: 70px;
+}
+
+.footer-contacts p {
+  margin: 0;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 160px;
+  flex-wrap: wrap;
+}
+
+.social-button {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-actions a {
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+
+.footer-actions a:hover {
+  opacity: 1;
+}
+
+.footer-social a {
+  opacity: 0.3;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
+.btn-html-academy {
+  width: 27px;
+  height: 35px;
+}
+
+.btn-html-academy:hover,
+.footer-logo-active img:hover {
+  opacity: 0.6;
+}
+
+.btn-html-academy:active,
+.footer-logo-active img:active,
+.footer-actions a:active {
+  opacity: 0.3;
 }
 
 /*Cтили страницы каталога хлебные крошки*/
 
-.title-page {
+
+.inner-page .header-actions-user::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.inner-page .header-actions-enter {
+  opacity: 0.3;
+  padding-left:0;
+}
+
+.inner-page .header-actions-enter::before {
+  display: none;
+}
+
+.inner-page .site-navigation-catalog,
+.inner-page .site-navigation {
+  margin-bottom: 55px;
+}
+
+.inner-page .navigation-wrapper {
+  margin-bottom:45px;
+}
+
+.inner-page .title-page {
   padding-left: 60px;
+  margin-bottom:30px;
 }
 
 .breadcrumbs-list {
@@ -748,17 +991,38 @@ a {
   padding-left: 60px;
 }
 
-.breadcrumbs-list li {
-  margin-right: 40px;
+.breadcrumbs-list li:last-child {
+  margin-right:0;
+}
+
+.breadcrumbs-active::after {
+  display: none;
 }
 
 .breadcrumbs-item {
+  margin-right: 40px;
+
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.14px;
   color: #000000;
 
   opacity: 0.3;
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  content:"";
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  opacity: 1;
+
+  background-image: url(../img/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .breadcrumbs-item  a {
@@ -951,7 +1215,6 @@ a {
   text-transform: none;
 }
 
-
 /*Стили для пагинатора*/
 
 .catalog-pagination {
@@ -1004,168 +1267,6 @@ a {
 .catalog-pagination-item a:active {
   opacity: 1;
 }
-
-/*Стили футера*/
-.footer {
-  padding: 60px 0;
-
-  letter-spacing: 0;
-  color: #ffffff;
-
-  background-color: #464646;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-copyright {
-  margin-left: 500px;
-}
-
-.footer-logo-active img {
-  width: 163px;
-  height: 35px;
-}
-
-.footer-user-actions {
-  margin-bottom: 30px;
-}
-
-.footer-actions li {
-  display: inline-block;
-}
-
-.footer-actions li:not(:last-child) {
-  padding-right: 30px;
-}
-
-.footer-actions-link {
-  position: relative;
-
-  padding-left: 30px;
-}
-
-.footer-actions-enter::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
-
-  width: 13px;
-  height: 12px;
-
-  background-image: url(../img/user.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.footer-actions-compare::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
-
-  width: 10px;
-  height: 10px;
-
-  background-image: url(../img/compare.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.footer-actions-order::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 3px;
-
-  width: 12px;
-  height: 12px;
-
-  background-image: url(../img/cart.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.footer-site-navigation {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 50%;
-}
-
-.footer-social li {
-  display: inline-block;
-}
-
-.footer-contacts {
-  margin-bottom: 70px;
-}
-
-.footer-contacts p {
-  margin: 0;
-}
-
-.footer-contacts a {
-  color: #ffffff;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 160px;
-  flex-wrap: wrap;
-}
-
-.social-button {
-  width: 32px;
-  height: 32px;
-}
-
-.footer-actions a {
-  line-height: 36px;
-  letter-spacing: 0.15px;
-  color: #ffffff;
-
-  opacity: 0.7;
-}
-
-.footer-actions a:hover {
-  opacity: 1;
-}
-
-.footer-social a {
-  opacity: 0.3;
-}
-
-.social-button:hover {
-  opacity: 0.6;
-}
-
-.social-button:active {
-  opacity: 0.1;
-}
-
-.btn-html-academy {
-  width: 27px;
-  height: 35px;
-}
-
-.btn-html-academy:hover,
-.footer-logo-active img:hover {
-  opacity: 0.6;
-}
-
-.btn-html-academy:active,
-.footer-logo-active img:active,
-.footer-actions a:active {
-  opacity: 0.3;
-}
-
-
-
 /*стили для модальных окон*/
 
 .modal-letter {
