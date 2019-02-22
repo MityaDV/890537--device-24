@@ -4,7 +4,7 @@
   font-family: "gilroyextrabold";
 
   src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"),
-    url("../fonts/gilroyextrabold-webfont.woff") format("woff");
+  url("../fonts/gilroyextrabold-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: "gilroylight";
 
   src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
-    url("../fonts/gilroylight-webfont.woff") format("woff");
+  url("../fonts/gilroylight-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-family: "open_sanslight";
 
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-light-webfont.woff") format("woff");
+  url("../fonts/opensans-light-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   font-family: "open_sansregular";
 
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-regular-webfont.woff") format("woff");
+  url("../fonts/opensans-regular-webfont.woff") format("woff");
 }
 
 html {
@@ -94,12 +94,12 @@ a {
 
   text-align: center;
   color: #000000;
-  border: none;
-  background: transparent;
 
+  background: transparent;
   background-image: url(../img/line-yellow.png);
   background-repeat: repeat-x;
   background-position: center;
+  border: none;
 }
 
 /*Стили для скрытых элементов для читалок*/
@@ -109,17 +109,18 @@ input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
 
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+
+  border: 0;
 
   white-space: nowrap;
 
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /*Стили для Хедера*/
@@ -233,8 +234,8 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.header-form input:focus+.form-search-button,
-.header-form input+.form-search-button:focus {
+.header-form input:focus + .form-search-button,
+.header-form input + .form-search-button:focus {
   opacity: 1;
 }
 
@@ -250,7 +251,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.header-form input+.form-search-button:active {
+.header-form input + .form-search-button:active {
   opacity: 0.3;
 }
 
@@ -365,7 +366,7 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
 }
 
-.site-navigation-catalog-item:hover>.navigation-submenu-wrapper {
+.site-navigation-catalog-item:hover > .navigation-submenu-wrapper {
   visibility: visible;
 }
 
@@ -1093,15 +1094,7 @@ input[type="radio"].visually-hidden {
 
 /*Cтили блока с фильтрами и сортировки*/
 
-/*Стили фона фильтров и сортировки*/
-.specification-sorting-color {
-  background: linear-gradient(to right, #dbdbdb 40%, #ebebeb 40%);
-}
-
-.specification-options-color {
-  background: linear-gradient(to right, #efefef 40%, #ffffff 40%);
-}
-
+/*Стили фона карточек товаров*/
 .catalog-list-item img {
   width: 360px;
   height: 380px;
@@ -1111,6 +1104,63 @@ input[type="radio"].visually-hidden {
 }
 
 /*конец фильтров фона*/
+
+.flex-container1 {
+  display: flex;
+}
+
+.flex-container2 {
+  display: flex;
+}
+
+.element1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  background: aqua;
+
+  flex: 1 60%;
+}
+
+.element2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: aquamarine;
+
+  flex: 1 100%;
+}
+
+.element3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  background: bisque;
+
+  flex: 1 60%;
+}
+
+.element4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: burlywood;
+
+  flex: 1 100%;
+}
+
+/**/
+
+
+
+.filter-title {
+  min-width: 328px;
+  padding-left: 60px;
+}
 
 .specification-title {
   margin: 0;
@@ -1168,7 +1218,6 @@ input[type="radio"].visually-hidden {
 }
 
 .specification-options {
-  flex-basis: 30%;
   margin-top: 70px;
   margin-left: 60px;
 }
@@ -1225,63 +1274,66 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.14px;
   color: #000000;
 
-  text-transform: none;
-
-
   cursor: pointer;
+
   user-select: none;
+  text-transform: none;
 }
 
 .filter-input-checkbox + label::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 8px;
   left: -40px;
 
   width: 23px;
   height: 23px;
+
   background: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter-input-checkbox:checked + label::after {
-  content:"";
+  content: "";
   position: absolute;
   top: 8px;
   left: -40px;
 
   width: 23px;
   height: 23px;
+
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
-  background-position: 0 0px;
+  background-position: 0 0;
 }
 
 .filter-input-radio + label::before {
-  content:"";
+  content: "";
   position: absolute;
   top: 8px;
   left: -40px;
 
   width: 25px;
   height: 25px;
+
   background: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter-input-radio:checked + label::after {
-  content:"";
+  content: "";
   position: absolute;
   top: 8px;
   left: -40px;
 
   width: 25px;
   height: 25px;
+
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
-  background-position: 0 0px;
+  background-position: 0 0;
 }
 
 .btn-options {
@@ -1330,12 +1382,12 @@ input[type="radio"].visually-hidden {
 .catalog-pagination-list {
   display: flex;
   justify-content: space-around;
+  padding: 30px 0;
 
   font-size: 16px;
   letter-spacing: 3.2px;
 
   background-color: #ebebeb;
-  padding: 30px 0;
 }
 
 .catalog-pagination-back,
