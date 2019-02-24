@@ -90,7 +90,7 @@ img {
   text-transform: uppercase;
 }
 
-/*Стили для кнопок жёлтая полоса*/
+/*Стили для кнопок*/
 .btn {
   display: block;
   width: 220px;
@@ -105,6 +105,12 @@ img {
   background-repeat: repeat-x;
   background-position: center;
   border: none;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
 }
 
 /*Стили для скрытых элементов для читалок*/
