@@ -115,6 +115,9 @@ img {
   cursor: default;
 }
 
+.button {
+  cursor: pointer;
+}
 /*Стили для скрытых элементов для читалок*/
 
 .visually-hidden:not(:focus):not(:active),
@@ -1160,7 +1163,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*Cтили страницы каталога хлебные крошки*/
-
 
 .inner-page .header-actions-user::before {
   content: "";
