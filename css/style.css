@@ -1650,20 +1650,112 @@ input[type="radio"].visually-hidden {
 
 /*стили для модальных окон*/
 
-.modal-letter {
+.modal {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  width: 960px;
+  margin-left: -480px;
   background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  display: none;
 }
 
-.letter-form p {
+.modal-letter {
+  top: 1055px;
+  padding: 80px 100px;
+}
+
+.modal-map {
+  top: 1850px;
+  height: 559px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  width: 55px;
+  height: 55px;
+
+  font-size: 0;
+
+  background: transparent;
+  background-image: url(../img/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.letter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal-map p {
   margin: 0;
 }
 
+.letter-form p {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: 35px;
+
+}
+
+.letter-form p:first-child {
+  margin-right: 40px;
+}
+
+.letter-form p:last-of-type {
+  flex-basis: 100%;
+  margin-bottom: 40px;
+}
+
 .letter-form label {
+  margin-bottom: 10px;
+
   font-weight: 800;
   letter-spacing: 0;
   color: #000000;
+  background-color: #ffffff;
 
   text-transform: none;
+}
+
+.letter-form input,
+.letter-form textarea {
+  padding: 15px 0 15px 15px;
+
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+  opacity: 0.5;
+}
+
+.letter-form textarea {
+  flex-basis: 155px;
+  padding-bottom: 0;
+}
+
+.btn-letter-send {
+  width: 200px;
 }
 
 .letter-form input,
@@ -1676,18 +1768,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-family: "open_sansregular", sans-serif;
 }
-
-.letter-form input,
-.letter-form textarea {
-  padding: 0;
-
-  color: #464646;
-
-  background-color: #f2f2f2;
-  border: none;
-  opacity: 0.5;
-}
-
 .letter-form input:hover,
 .letter-form textarea:hover {
   background-color: #eaeaea;
@@ -1716,20 +1796,12 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.letter-form input {
-  text-align: center;
-  vertical-align: middle;
+.btn-letter-send:hover,
+.btn-letter-send:focus {
+  background-color: #f0c52e;
 }
 
-.btn-letter-send {
-  margin: 0;
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-}
-
-/*Стили фильтра покупки для карточки*/
+/*Стили для карточки покупки*/
 
 .btn-catalog-order,
 .btn-catalog-compare {
