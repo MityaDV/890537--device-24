@@ -1080,6 +1080,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-basis: 50%;
+  flex-wrap: wrap;
 }
 
 .site-navigation-item:hover {
@@ -1295,7 +1296,7 @@ input[type="radio"].visually-hidden {
 .column-sorting {
   width: 832px;
   padding-right: 20px;
-  padding-left: 72px;
+  padding-left: 70px;
 }
 
 .filter-title {
@@ -1542,10 +1543,6 @@ input[type="radio"].visually-hidden {
   flex-basis: 360px;
 }
 
-.catalog-list-item:nth-child(2n) {
-  margin-right: 0;
-}
-
 .catalog-list-item img {
   width: 360px;
   height: 380px;
@@ -1553,12 +1550,6 @@ input[type="radio"].visually-hidden {
 
   background-color: #efefef;
   border: none;
-}
-
-.catalog-list-item img:hover {
-  opacity: 0.7;
-
-  cursor: pointer;
 }
 
 .catalog-title-item {
@@ -1588,6 +1579,94 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 
   text-transform: none;
+}
+
+/*Стили для карточки покупки*/
+
+.flag-new::before {
+  content: "NEW";
+  position: absolute;
+  top: 29px;
+  right: 27px;
+
+  width: 60px;
+  height: 60px;
+  padding-top: 15px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "gilroyextrabold", sans-serif;
+  text-align: center;
+  letter-spacing: 0.7px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.2;
+
+  text-transform: uppercase;
+}
+
+.catalog-list-item {
+  position: relative;
+}
+
+.catalog-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  visibility: hidden;
+  width: 360px;
+  height: 380px;
+  padding: 170px 80px 0 80px;
+
+  text-align: center;
+
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.catalog-list-item:hover .catalog-actions {
+  visibility: visible;
+
+  cursor: pointer;
+}
+
+.btn-catalog-order:hover,
+.btn-catalog-order:focus {
+  background-color: #f0c52e;
+}
+
+.btn-catalog-order:active {
+  opacity: 0.3;
+}
+
+.btn-catalog-compare:hover {
+  opacity: 1;
+}
+
+.btn-catalog-compare:active {
+  opacity: 0.2;
+}
+
+.btn-catalog-order {
+  margin-bottom: 20px;
+}
+
+.btn-catalog-compare {
+  display: block;
+}
+
+.btn-catalog-compare {
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  color: #000000;
+
+  opacity: 0.5;
 }
 
 .catalog-pagination {
@@ -1814,37 +1893,4 @@ input[type="radio"].visually-hidden {
 .btn-letter-send:hover,
 .btn-letter-send:focus {
   background-color: #f0c52e;
-}
-
-/*Стили для карточки покупки*/
-
-.btn-catalog-order,
-.btn-catalog-compare {
-  background-color: transparent;
-  border: none;
-}
-
-.btn-catalog-order:hover {
-  background-color: #f0c52e;
-}
-
-.btn-catalog-order:active {
-  opacity: 0.3;
-}
-
-.btn-catalog-compare {
-  font-size: 13px;
-  line-height: 20px;
-  font-family: "open_sanslight", sans-serif;
-  letter-spacing: 0.13px;
-
-  opacity: 0.5;
-}
-
-.btn-catalog-compare:hover {
-  opacity: 1;
-}
-
-.btn-catalog-compare:active {
-  opacity: 0.2;
 }
