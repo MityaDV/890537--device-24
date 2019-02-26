@@ -150,11 +150,11 @@
                   <legend>Цвет</legend>
                   <ul class="page-list">
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black" checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black " checked>
                       <label for="filter-black">Черный</label>
                     </li>
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-white" type="checkbox" name="white">
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-white" type="checkbox" name="white" disabled>
                       <label for="filter-white">Белый</label>
                     </li>
                     <li class="filter-item">
@@ -192,6 +192,10 @@
             <div class="column-sorting">
               <div class="catalog-list">
                 <section class="catalog-list-item">
+                  <div class="catalog-actions">
+                    <a href="#" class="btn btn-catalog-order page-font">В корзину</a>
+                    <a href="#" class="btn-catalog-compare">Добавить к сравнению</a>
+                  </div>
                   <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <ul class="catalog-title-item page-list page-font">
                     <li class="item-name">Любительская селфи-палка</li>
@@ -199,6 +203,10 @@
                   </ul>
                 </section>
                 <section class="catalog-list-item">
+                  <div class="catalog-actions">
+                    <a href="#" class="btn btn-catalog-order page-font">В корзину</a>
+                    <a href="#" class="btn-catalog-compare">Добавить к сравнению</a>
+                  </div>
                   <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   <ul class="catalog-title-item page-list page-font">
                     <li class="item-name">Профессиональная селфи-палка</li>
@@ -206,13 +214,21 @@
                   </ul>
                 </section>
                 <section class="catalog-list-item">
+                  <div class="catalog-actions">
+                    <a href="#" class="btn btn-catalog-order page-font">В корзину</a>
+                    <a href="#" class="btn-catalog-compare">Добавить к сравнению</a>
+                  </div>
                   <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                   <ul class="catalog-title-item page-list page-font">
                     <li class="item-name">Непотопляемая селфи-палка</li>
                     <li class="item-price">2 500 руб.</li>
                   </ul>
                 </section>
-                <section class="catalog-list-item">
+                <section class="catalog-list-item flag-new">
+                  <div class="catalog-actions">
+                    <a href="#" class="btn btn-catalog-order page-font">В корзину</a>
+                    <a href="#" class="btn-catalog-compare">Добавить к сравнению</a>
+                  </div>
                   <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   <ul class="catalog-title-item page-list page-font">
                     <li class="item-name">Селфи-палка «Следуй за мной»</li>
@@ -250,7 +266,7 @@
         <div class="footer-content footer-user-actions">
           <div class="footer-logo-active">
             <a>
-              <img src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
+              <img src="img/logo-device2.svg" width="163" height="35" alt="Магазин «Девайс»">
             </a>
           </div>
           <ul class="footer-actions page-list">
@@ -324,27 +340,13 @@
           </ul>
           <a class="btn-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
             <span class="visually-hidden">HTML Academy</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="35" viewBox="0 0 27 35">
-              <g>
-                <g transform="translate(-1273 -2694)">
-                  <image width="27" height="35" transform="translate(1273 2694)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAjCAYAAABl/XGVAAAD20lEQVRIS63XV6gkZRAF4G/NuuKas6KCAQwoYgIR05sIvhhWRDBhWnMWc845YsSIqA8q6JMBMYtZVBAEw5pzzsqB6qXvbPfcmas/DDPT3f9/Kpw6VT3N3GsJrIyVsApWbP3OtXyWxNeYXZ8P6/tj5PdH9f+b9vHTcEcdkENXxUIdBkz10q/4ADFidsD+GTjpT3wyYHE8iLWNxV9i6TIyUWgi0Rgc71fAfIOeBewnbFMh+Bx/T9WV1r55sGyl4nFMbzz7Dov/DwB9R3yLGVMBS8j2xpWYQIAhxo4NlvgfhtOwKL7A8bilI++DuGOBbYlrsB6ux9U4CbviWRyI1/6rZ2HcBdirDjsAz7UO3RZXYJ0y5mQk/2N5Fibtg/MxP06pHKUsBlfCe2iF9xccibsGQtsbxo1wLTbD/Ti86msysqauLsLueBIH483aNBdY1OMsHFRVPwsPT4bQcX+risK6uBRnVP3Oof4f+ApL4cICTUj6Vgx6DO/0PJDQ5pkz8SOWSTracvVEPfD2CN7cjD3KsLPxc8+e5YpAu+R+GywsC4VfHQFseeSAhD0RCUEe6ti3A67Cam2whPGzEs/UUCj8/RDQECf3L6vC3g0PFuj7WB2XY8ciy6bpJm25ilKfiiMQVQ+F7+4BjMUp7kVwAt4rUoRk92Fn/ICjcXvJWqc2hkVRi7AqJAiFB4mQay9WKFMaL+HW8iZ1+Qq2a2nnULmK2EYdUjcz6rtNhIYgl+AF3IsIQbMewE6t/0PBYuX0om4kKp/koiHCvMXc5KwNMiWwrXFTNb/T8XTlZONi3XUlT5v05HQsz8Kul7EnjsG75cn6SDgT2mFrLLAwLRoXqXmkCjNjQ8KbPN2JAPetexCDmzU0Z5mwQuk0x8ar0Pri6gLp0Gt0IKVeQ6oUe1tVRmqea1UZhMa34ZzqAvuX+rTxIncpibc6jJgAFtFds8a3rtAkpAnfguVxanBmPZhpLMWb+XNwLMwjEYtEZ+EoyG9YoNQ580VkpqtJhhTnVhnk0OxNbk/sGXyapho2Z2b5PRvWLrHcvix9o5j3VE/2o3PxJLlJQXetZmZpSPQoZgWsWWFPml0UPStT07Glk5Mwfc7t9sySi5+2NbYNlpuLFd3TpaMSYV0YeeMkU3JUZF+ch7yY/FUT2ITuMQjWmLhhzSGb14Xnq9dFYAdXe2bJvd6+2AeWTbkXa0OKjAuZ/5t5Mb0sUUg9he7xLK9QiUJkrvNdYRhY40HykPBktGvycAP2a+U3XeC4yfI7ClgDugUiwBu04vh6hfeZURg0DljOS+0cgqNKuvJy0VWTndj/Asd5FeCLQ2mOAAAAAElFTkSuQmCC" />
-                </g>
-              </g>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="35" fill="#ffc600" viewBox="0 0 27 35">
+              <image id="logo-html" width="27" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAjCAYAAABl/XGVAAAD1klEQVRIiaWXV4xNURSGPzJ6r8HoD0pi9Oi9RsSL6BM9BAkPiJoQQSI6iRKiBFEePCiParQRzIzOSEgwTESbaKPLmvtvjlPu3OFPTu7Z+6y91tpr/WvtfYv8vIgflYDaQDJQB6jleU/WUxl4DWTreaLfZ3p/qvEbr24ztk8KTGldoGTA/L8jD3gsJ7LN2E+fqm/Ac5/H2fLWefwSqCona3si4Ry295pAklexG3wAekr5C+BHAnt5BzwKzP5BUaC6wn8aKOOM2W6uBMT/D+Zwjh7Tn2+9sLCQLRKRCoXCGLMozALuAkuA+8AEI1lAMgKJGusCpAOrIJ+9KcApYAdwAWgRWBGCgowZ43YC55SDTsBU4BYwAugNlAeuARuBCgENHkQZs/lJQBYwFJgJtAXSfHK2u5bAHGCc5FOjQhtmrBVgfWWblDUF1jlGhcDm1wKNgRMK8xmgWTxj5RWKK6qPgcAQFXIieK5ddQcqApnKcTm31nWQr8AroIoElgGf4hiYpl3fC3yJIUkyS4H3QDWgmNtZMS00Vi0swBDK3w1gOVA68DUWWotSI+C89P8VRmvAJQLLwrEAmA1MB24Dg0KlYk61cwNn7Ks6w1Vgg/IXD5tEpK5i6FHgCFBPaxpo7ri6fp7X2EegiVg1Td1hZBxjVnt91WCNef3ERusue4A7QAdgLNAD+OwP4wfVS0vVy37gpJzwoz4wWEY3iVAbRIzRMtpYhn8fYWF1dlsUHqu2dD2ECG2UeCPCMOVmsyOCQvfGrzjJPyGYp2WAPsAUYD4wCpgBHFN3yQDWRzgciijB3UBrNdmHQGfV4VE9/RWuqPWhiNpZDWAAMEYhfCDipGgcRfW4iPKspzp5rvJjV4Wzyo3R/WZgxd/IC8x42lWu+plDSeVpnmdXdpFZIxJY8hsGtMXqdbVy/tEz/9aOn6idmWeLFbYc7crqqhtwSEXrxxmVzQKfod9wxorr+uVHlhiZKlKkqRQOeuReKLe9VMx+JEt/vrEvQCk14lkRpNmvIj2gehquYt2qot/rLV4hSYfuPen/Ysaa69Arq3in687hR65yZ23osH6nhhWv586yRnqtE7Xw3vVH6ESuofEuta+XAVXRsDvLSmC8JHK0uwP4qH9QobIe910LLGeT45SIQ1HJZWndd51nLvT5CPsXg1i1RaEyXFbIMgKSsaPGZNtrnCbZzDCPwpCpa9tktan2Ous2es46d2e5qu+vJd85zFC8nXlheVgBTNSc5WG7mrHLrx01cwvKbyLGHDqK6sZeB7uHWMgS0lKYrn1JfdLYZf/R7NfGibkL/ALH7fcxn14KxQAAAABJRU5ErkJggg==" />
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <div class="catalog-buy">
-      <ul class="catalog-buy-list page-list">
-        <li class="catalog-buy-item">
-          <button class="btn btn-catalog-order page-font" type="submit">В корзину</button>
-        </li>
-        <li class="catalog-buy-item">
-          <button class="btn btn-catalog-compare" type="submit">Добавить к сравнению</button>
-        </li>
-      </ul>
-    </div>
     <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
