@@ -781,7 +781,7 @@ input[type="radio"].visually-hidden {
   visibility: visible;
 }
 
-.services-column:nth-child(3) {
+.services-column:nth-last-child(1) {
   display: flex;
 }
 
