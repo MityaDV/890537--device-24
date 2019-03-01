@@ -1,4 +1,4 @@
-var info = document.querySelector(".contacts-actions-link");
+var info = document.getElementById(["js-actions-map"]);
 var map = document.querySelector(".modal-map");
 var close = map.querySelector(".modal-close");
 
@@ -12,7 +12,7 @@ close.addEventListener("click", function(evt) {
   map.classList.remove("modal-open");
 });
 
-window.addEventListener("keydown", function(evt) {
+document.addEventListener("keyup", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (map.classList.contains("modal-open")) {

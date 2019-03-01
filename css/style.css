@@ -467,7 +467,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.slider-list-item:nth-child(2) {
+.slider-list-item:nth-child(1) {
   display: flex;
 }
 
@@ -715,19 +715,30 @@ input[type="radio"].visually-hidden {
 
 .services-content {
   display: flex;
-  justify-content: space-between;
   min-height: 300px;
   margin-bottom: 94px;
-  padding-bottom: 150px;
 }
 
-.services-column-title {
+.services-column-button {
   position: relative;
+  flex-grow: 2;
 }
 
 .services-list {
   position: absolute;
-  top: -19px;
+  top: -20px;
+}
+
+.services-list::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -120px;
+
+  width: 7px;
+  height: 320px;
+
+  background-color: #000000;
 }
 
 .btn-services {
@@ -751,18 +762,6 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
-.btn-services::after {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -123px;
-
-  width: 7px;
-  height: 170px;
-
-  background-color: #000000;
-}
-
 .btn-services:hover,
 .btn-services:focus {
   background-color: #f0c52e;
@@ -781,16 +780,22 @@ input[type="radio"].visually-hidden {
   visibility: visible;
 }
 
-.services-column-description {
+.services-column:nth-child(3) {
   display: flex;
-  flex-basis: 460px;
-  flex-wrap: wrap;
-  margin: 0 0 0 100px;
 }
 
-.services-column-description h2 {
+.services-column {
+  display: none;
+    flex-grow: 1;
+    flex-basis: 50%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.services-column h2 {
   position: absolute;
-  top: -26px;
+    top: -26px;
+    left: 28px;
 }
 
 .title {
@@ -806,19 +811,31 @@ input[type="radio"].visually-hidden {
 
 .services-text {
   margin: 55px 0 0 0;
+  flex-basis: 460px;
 }
 
-.services-column-foto {
+.services-logo {
   position: relative;
+  min-width: 170px;
 }
 
-.services-column-foto img {
+.services-logo img {
   position: absolute;
   top: -15px;
-  left: -136px;
-
+}
+.logo-delivery img {
   width: 136px;
   height: 164px;
+}
+
+.logo-warranty img {
+  width: 171px;
+  height: 194px;
+}
+
+.logo-credit img {
+  width: 156px;
+  height: 186px;
 }
 
 /*Стили блока партнеров*/
@@ -1768,19 +1785,19 @@ input[type="radio"].visually-hidden {
 
 @keyframes departure {
   0% {
-    transform: translateX(-2000px);
+    transform: translate(-200%);
   }
 
   70% {
-    transform: translateX(30px);
+    transform: translate(-30%);
   }
 
   90% {
-    transform: translateX(-10px);
+    transform: translate(-70%);
   }
 
   100% {
-    transform: translateX(0);
+    transform: translate(-50%);
   }
 }
 
@@ -1788,7 +1805,7 @@ input[type="radio"].visually-hidden {
 
   0%,
   100% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translate(-50%);
   }
 
   10%,
@@ -1796,14 +1813,14 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: rotate(-2deg);
+    transform: translate(-50%) rotate(-2deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: rotate(2deg);
+    transform: translate(-50%) rotate(2deg);
   }
 }
 
@@ -1814,9 +1831,10 @@ input[type="radio"].visually-hidden {
 
   display: none;
   width: 960px;
-  margin-left: -480px;
 
   background-color: #ffffff;
+
+  transform: translate(-50%);
 
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
@@ -1824,11 +1842,18 @@ input[type="radio"].visually-hidden {
 .modal-open {
   display: block;
 
-  animation: departure 0.7s;
+  transition: ease-out;
+  animation-name: departure;
+  animation-duration: 0.7s;
+
+  will-change: transform;
 }
 
 .modal-error {
-  animation: turn 0.9s;
+  animation-name: turn;
+  animation-duration: 0.9s;
+
+  will-change: transform;
 }
 
 .modal-letter {

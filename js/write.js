@@ -16,7 +16,6 @@ try {
   isStorageSupport = false;
 }
 
-
 contacts.addEventListener("click", function(evt) {
   evt.preventDefault();
   letter.classList.add("modal-open");
@@ -37,19 +36,17 @@ close.addEventListener("click", function(evt) {
 
 form.addEventListener("submit", function(evt) {
   if (!login.value || !email.value || !text.value) {
-    letter.classList.remove("modal-error");
-    letter.offsetWidth = letter.offsetWidth;
     letter.classList.add("modal-error");
     evt.preventDefault();
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("login", login.value);
-      localStorage.setItem("email", email.value);
+      localStorage.setItem("login", login.value.trim());
+      localStorage.setItem("email", email.value.trim());
     }
   }
 });
 
-window.addEventListener("keydown", function(evt) {
+document.addEventListener("keyup", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (letter.classList.contains("modal-open")) {
