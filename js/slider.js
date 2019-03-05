@@ -1,6 +1,10 @@
 var buttons = document.querySelectorAll(".slider-button-list .slider-button");
 var slides = document.querySelectorAll(".slider-list .slider-item");
 var slideActive;
+var servicesLink = document.querySelectorAll(".services-item .btn-services");
+var servicesContent = document.querySelectorAll(".services-content .services-column");
+var servicesActive;
+
 
 var toggleSlides = function(current) {
   for (var i = 0; i < slides.length; i++) {
@@ -23,3 +27,24 @@ var onButtonClick = function() {
   });
 }	
 
+var toggleContent = function(current) {
+	for (var i = 0; i < servicesContent.length; i++) {
+		servicesContent[i].classList.remove("services-active");
+	}
+	current.classList.add("services-active");
+};
+
+var onBtnClick = function() {
+  servicesActive = document.getElementById(this.dataset.services);
+	toggleContent(servicesActive);
+};
+
+for (var i = 0; i < servicesLink.length; i++) {
+		servicesLink[i].addEventListener("click", onBtnClick);
+		servicesLink[i].addEventListener("click", function(evt) {
+			evt.preventDefault();
+		var current = document.getElementsByClassName("services-active");
+    current[0].className = current[0].className.replace(" services-active", "");
+    this.className += " services-active";
+		});
+	}

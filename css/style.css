@@ -746,19 +746,17 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.btn-services:active {
+.btn-services:active,
+.btn-services:focus {
   color: #f7e184;
 
   background-color: #000000;
   background-image: none;
 }
 
-.btn-services:active::before {
+.btn-services:active::before,
+.btn-services:focus::before {
   visibility: visible;
-}
-
-.services-column:nth-last-child(1) {
-  display: flex;
 }
 
 .services-column {
@@ -768,6 +766,10 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   flex-basis: 50%;
   flex-grow: 1;
+}
+
+.services-column.services-active {
+  display: flex;
 }
 
 .services-column h2 {
