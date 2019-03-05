@@ -88,7 +88,7 @@
         <div class="container">
           <h2 class="title slider-title visually-hidden">Хитовые товары</h2>
           <ul class="slider-list page-list page-font">
-            <li class="slider-list-item slider-list-item-active">
+            <li class="slider-item slider-item-active" id="slide-1">
               <div class="slider-foto-wrapper">
                 <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
               </div>
@@ -113,7 +113,7 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-list-item">
+            <li class="slider-item" id="slide-2">
               <div class="slider-foto-wrapper">
                 <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
               </div>
@@ -130,7 +130,7 @@
                 </ul>
               </div>
             </li>
-            <li class="slider-list-item">
+            <li class="slider-item" id="slide-3">
               <div class="slider-foto-wrapper">
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер оснащенный мощным лазером">
               </div>
@@ -154,19 +154,13 @@
           </ul>
           <ul class="slider-button-list page-list">
             <li class="slider-button-item">
-              <button class="slider-button slider-button-active">
-                <img src="img/slider-button.svg" width="12" height="12" alt="Кнопка активного слайда">
-              </button>
+              <button class="slider-button slider-button-active" data-slide="slide-1"></button>
             </li>
             <li class="slider-button-item">
-              <button class="slider-button">
-                <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
-              </button>
+              <button class="slider-button" data-slide="slide-2"></button>
             </li>
             <li class="slider-button-item">
-              <button class="slider-button">
-                <img src="img/slider-button-empty.svg" width="12" height="12" alt="Кнопка неактивного слайда">
-              </button>
+              <button class="slider-button" data-slide="slide-3"></button>
             </li>
           </ul>
         </div>
@@ -424,6 +418,7 @@
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <script src="js/slider.js"></script>
     <script src="js/write.js"></script>
     <script src="js/map.js"></script>
     <script>

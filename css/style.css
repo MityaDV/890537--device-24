@@ -418,7 +418,7 @@ input[type="radio"].visually-hidden {
 .site-navigation-active::after {
   content: "";
   position: absolute;
-  top: 90px;
+  top: 115px;
   left: 0;
 
   width: 100px;
@@ -463,73 +463,15 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.slider-list-item {
+.slider-item {
   display: none;
 }
 
-.slider-list-item:nth-child(1) {
+.slider-item.slider-item-active {
   display: flex;
 }
 
-.slider-button-list {
-  position: absolute;
-  top: 233px;
-  right: 100px;
-  z-index: 50;
-
-  display: flex;
-  justify-content: space-between;
-  width: 80px;
-}
-
-.slider-button {
-  position: relative;
-
-  width: 20px;
-  height: 20px;
-  padding: 0;
-
-  background: transparent;
-  border: 0;
-
-  cursor: pointer;
-}
-
-.slider-button::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  z-index: 1;
-
-  width: 12px;
-  height: 12px;
-
-  background-image: url(../img/slider-button-empty.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.slider-button-active::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  z-index: 2;
-
-  width: 12px;
-  height: 12px;
-
-  background-image: url(../img/slider-button.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.slider-button img {
-  display: none;
-}
-
-.slider-list-item {
+.slider-item {
   position: relative;
   top: -108px;
 }
@@ -540,17 +482,17 @@ input[type="radio"].visually-hidden {
   flex-basis: 50%;
 }
 
-.slider-list-item:first-child img {
+.slider-item:first-child img {
   width: 384px;
   height: 486px;
 }
 
-.slider-list-item:nth-child(2) img {
+.slider-item:nth-child(2) img {
   width: 345px;
   height: 485px;
 }
 
-.slider-list-item:last-child img {
+.slider-item:last-child img {
   width: 526px;
   height: 334px;
 }
@@ -602,7 +544,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item-text {
   margin: 0 0 55px 0;
-  padding-right: 80px;
+  padding-right: 70px;
 
   font-size: 15px;
   line-height: 30px;
@@ -650,6 +592,40 @@ input[type="radio"].visually-hidden {
   text-transform: none;
 }
 
+.slider-button-list {
+  position: absolute;
+  top: 233px;
+  right: 100px;
+  z-index: 50;
+
+  display: flex;
+  justify-content: space-between;
+  min-width: 80px;
+}
+
+.slider-button {
+  position: relative;
+
+  width: 12px;
+  height: 12px;
+  padding: 0px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.slider-button-active::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
 /*Стили блока популярные товары*/
 
 .popular-goods-list {
