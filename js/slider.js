@@ -7,25 +7,25 @@ var servicesActive;
 
 
 var toggleSlides = function(current) {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("slider-item-active");
-  }
-  current.classList.add("slider-item-active");
+	for (var i = 0; i < slides.length; i++) {
+		slides[i].classList.remove("slider-item-active");
+	}
+	current.classList.add("slider-item-active");
 };
 
 var onButtonClick = function() {
-  slideActive = document.getElementById(this.dataset.slide);
-  toggleSlides(slideActive);
+	slideActive = document.getElementById(this.dataset.slide);
+	toggleSlides(slideActive);
 };
 
-	for (var i = 0; i < buttons.length; i++) {
-  	buttons[i].addEventListener("click", onButtonClick);
-  	buttons[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("slider-button-active");
-    current[0].className = current[0].className.replace(" slider-button-active", "");
-    this.className += " slider-button-active";
-  });
-}	
+for (var i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener("click", onButtonClick);
+	buttons[i].addEventListener("click", function() {
+		var current = document.getElementsByClassName("slider-button-active");
+		current[0].className = current[0].className.replace(" slider-button-active", "");
+		this.className += " slider-button-active";
+	});
+}
 
 var toggleContent = function(current) {
 	for (var i = 0; i < servicesContent.length; i++) {
@@ -35,16 +35,18 @@ var toggleContent = function(current) {
 };
 
 var onBtnClick = function() {
-  servicesActive = document.getElementById(this.dataset.services);
+	servicesActive = document.getElementById(this.dataset.services);
 	toggleContent(servicesActive);
 };
 
 for (var i = 0; i < servicesLink.length; i++) {
-		servicesLink[i].addEventListener("click", onBtnClick);
-		servicesLink[i].addEventListener("click", function(evt) {
-			evt.preventDefault();
+	servicesLink[i].addEventListener("click", onBtnClick);
+	servicesLink[i].addEventListener("click", function(evt) {
+		evt.preventDefault();
+		servicesLink[i].focus();
 		var current = document.getElementsByClassName("services-active");
-    current[0].className = current[0].className.replace(" services-active", "");
-    this.className += " services-active";
-		});
-	}
+		current[0].className = current[0].className.replace(" services-active", "");
+		this.className += " services-active";
+	});
+
+}

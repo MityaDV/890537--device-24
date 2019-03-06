@@ -97,7 +97,7 @@
                 <h3 class="title-accent-light">Делай селфи,<br>как Бен Стиллер!</h3>
                 <p class="slider-item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a class="btn btn-slider" href="#">Подробнее</a>
-                <ul class="slider-feature-wrapper">
+                <div class="slider-feature-wrapper">
                   <ul class="slider-item-value page-list">
                     <li>8,5 м</li>
                     <li>Длина палки</li>
@@ -110,7 +110,7 @@
                     <li>Карбон</li>
                     <li>Материал</li>
                   </ul>
-                </ul>
+                </div>
               </div>
             </li>
             <li class="slider-item" id="slide-2">
@@ -122,12 +122,12 @@
                 <h3 class="title-accent-light">Худеем<br>правильно!</h3>
                 <p class="slider-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a class="btn btn-slider" href="#">Подробнее</a>
-                <ul class="slider-feature-wrapper">
+                <div class="slider-feature-wrapper">
                   <ul class="slider-item-value page-list">
                     <li>48 часов</li>
                     <li>Без подзарядки</li>
                   </ul>
-                </ul>
+                </div>
               </div>
             </li>
             <li class="slider-item" id="slide-3">
@@ -139,7 +139,7 @@
                 <h3 class="title-accent-light">Порхает как бабочка, жалит как пчела!</h3>
                 <p class="slider-item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <a class="btn btn-slider" href="#">Подробнее</a>
-                <ul class="slider-feature-wrapper">
+                <div class="slider-feature-wrapper">
                   <ul class="slider-item-value page-list">
                     <li>800 м</li>
                     <li>Дальность полета</li>
@@ -148,19 +148,21 @@
                     <li>50 м</li>
                     <li>Радиус поражения</li>
                   </ul>
-                </ul>
+                </div>
               </div>
             </li>
-          </ul>
-          <ul class="slider-button-list page-list">
-            <li class="slider-button-item">
-              <button class="slider-button slider-button-active" data-slide="slide-1"></button>
-            </li>
-            <li class="slider-button-item">
-              <button class="slider-button" data-slide="slide-2"></button>
-            </li>
-            <li class="slider-button-item">
-              <button class="slider-button" data-slide="slide-3"></button>
+            <li>
+              <ul class="slider-button-list page-list">
+                <li class="slider-button-item">
+                  <button class="slider-button slider-button-active" data-slide="slide-1"></button>
+                </li>
+                <li class="slider-button-item">
+                  <button class="slider-button" data-slide="slide-2"></button>
+                </li>
+                <li class="slider-button-item">
+                  <button class="slider-button" data-slide="slide-3"></button>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -182,7 +184,7 @@
                 <div class="popular-goods-foto popular-goods-bottom">
                   <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                 </div>
-                <p class="popular-goods-caption page-font">Моноподы для селфи</p>
+                <p class="popular-goods-caption page-font">Моноподы<br> для селфи</p>
               </a>
             </li>
             <li class="popular-goods-item">
@@ -259,6 +261,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
       <!-- Блок партнёры -->
       <div class="partners">
@@ -280,23 +283,23 @@
         </div>
       </div>
       <!-- Блоки О нас и Контакты-->
-      <section class="info contacts">
+      <section class="communication">
         <div class="container">
-          <div class="info-contacts-wrapper">
-            <div class="info-item-wrapper">
-              <h2 class="title title-info page-font">О нас</h2>
-              <p class="info-text info-more">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-              <p class="info-text info-more">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-              <ul class="info-list page-font">
-                <li class="info-item">Деловые Линии</li>
-                <li class="info-item">Автотрейдинг</li>
-                <li class="info-item">ЖелДорЭкспедиция</li>
+          <div class="communication-wrapper">
+            <div class="about-wrapper">
+              <h2 class="title title-about page-font">О нас</h2>
+              <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+              <p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+              <ul class="about-list page-font">
+                <li class="about-item">Деловые Линии</li>
+                <li class="about-item">Автотрейдинг</li>
+                <li class="about-item">ЖелДорЭкспедиция</li>
               </ul>
-              <a class="btn btn-info page-font" href="#">Подробнее о нас</a>
+              <a class="btn btn-about page-font" href="#">Подробнее о нас</a>
             </div>
-            <div class="info-item-wrapper">
-              <h2 class="title title-info page-font">Контакты</h2>
-              <p class="info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <div class="contacts-wrapper">
+              <h2 class="title title-contacts page-font">Контакты</h2>
+              <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
               <a id="js-actions-map" class="contacts-actions-link" href="#">
                 <img src="img/map-mini.jpg" width="560" height="222" alt="Найти нас на карте">
               </a>
@@ -412,7 +415,7 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473663!2d37.52742931604449!3d55.68703400452982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1551215391147" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473663!2d37.52742931604449!3d55.68703400452982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1551215391147" width="960" height="559" allowfullscreen></iframe>
       <p>
         <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
       </p>
@@ -421,10 +424,10 @@
     <script src="js/slider.js"></script>
     <script src="js/write.js"></script>
     <script src="js/map.js"></script>
-    <!-- <script>
+    <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
-    </script> -->
+    </script>
   </body>
 
 </html>
