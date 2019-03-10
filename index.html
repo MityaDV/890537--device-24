@@ -22,60 +22,57 @@
             <p>
               <label for="form-search"></label>
               <input class="header-form-search" id="form-search" type="text" autocomplete="off" name="header-search" placeholder="Поиск по сайту">
-              <button class="form-search-button" type="submit">Найти</button>
             </p>
           </form>
           <ul class="header-actions page-list">
             <li>
-              <a class="header-actions-link header-actions-enter" href="#">Войти</a>
+              <a class="header-actions-link header-actions-enter" href="login.html">Войти</a>
             </li>
             <li>
-              <a class="header-actions-link header-actions-compare" href="#">Сравнить</a>
+              <a class="header-actions-link header-actions-compare" href="compare.html">Сравнить</a>
             </li>
             <li>
-              <a class="header-actions-link header-actions-order" href="#">Корзина</a>
+              <a class="header-actions-link header-actions-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
           <ul class="site-navigation-catalog page-list">
-            <li class="site-navigation-catalog-item">
-              <a class="site-navigation-link page-font" href="#">Каталог товаров</a>
-              <div class="navigation-submenu-wrapper">
-                <ul class="navigation-submenu-list page-list">
-                  <li class="submenu-item">
-                    <a href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">Моноподы для селфи</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="navigation-submenu-list page-list">
-                  <li class="submenu-item">
-                    <a href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="submenu-item">
-                    <a href="#">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="navigation-submenu-list page-list">
-                  <li class="submenu-item">
-                    <a href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </div>
+            <li>
+              <a class="site-navigation-link page-font" href="catalog.html">Каталог товаров</a>
+              <ul class="site-navigation-submenu page-list">
+                <li>
+                  <a href="virtual-reality.html" tabindex="1">Виртуальная реальность</a>
+                  <ul class="submenu-item page-list">
+                    <li>
+                      <a href="fitness-bangle.html" tabindex="4">Фитнес-браслеты</a>
+                      <ul class="submenu-item page-list">
+                        <li>
+                          <a href="quadcopters.html" tabindex="6">Квадрокоптеры</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="smart-watch.html" tabindex="5">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="selfie-sticks.html" tabindex="2">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="action-cameras.html" tabindex="3">Экшн-камеры</a>
+                </li>
+              </ul>
             </li>
           </ul>
           <ul class="site-navigation page-list page-font">
             <li class="site-navigation-item site-navigation-delivery">
-              <a class="site-navigation-active">Доставка</a>
+              <a href="delivery.html" class="site-navigation-active">Доставка</a>
             </li>
             <li class="site-navigation-item site-navigation-warranty">
-              <a href="#">Гарантия</a>
+              <a href="warranty.html">Гарантия</a>
             </li>
             <li class="site-navigation-item site-navigation-contacts">
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -227,15 +224,15 @@
         <div class="container">
           <div class="services-content">
             <div class="services-column-button">
-              <ul class="services-list page-font page-list">
+              <ul class="services-list page-list">
                 <li class="services-item services-item-delivery">
-                  <a class="btn btn-services" href="#" data-services="services-1">Доставка</a>
+                  <button class="btn btn-services page-font btn-services-active" href="#" data-services="services-1">Доставка</button>
                 </li>
                 <li class="services-item services-item-warranty">
-                  <a class="btn btn-services" href="#" data-services="services-2">Гарантия</a>
+                  <button class="btn btn-services page-font" href="#" data-services="services-2">Гарантия</button>
                 </li>
                 <li class="services-item services-item-credit">
-                  <a class="btn btn-services" href="#" data-services="services-3">Кредит</a>
+                  <button class="btn btn-services page-font" href="#" data-services="services-3">Кредит</button>
                 </li>
               </ul>
             </div>
@@ -268,16 +265,24 @@
         <div class="container">
           <ul class="partners-list page-list">
             <li class="partners-item">
-              <a class="partners-item-foto" href="#"></a>
+              <a class="partners-item-foto" href="#">
+                <img src="img/logo-1.png" width="260" height="100">
+              </a>
             </li>
             <li class="partners-item">
-              <a class="partners-item-foto" href="#"></a>
+              <a class="partners-item-foto" href="#">
+                <img src="img/logo-2.png" width="260" height="100">
+              </a>
             </li>
             <li class="partners-item">
-              <a class="partners-item-foto" href="#"></a>
+              <a class="partners-item-foto" href="#">
+                <img src="img/logo-3.png" width="260" height="100">
+              </a>
             </li>
             <li class="partners-item">
-              <a class="partners-item-foto" href="#"></a>
+              <a class="partners-item-foto" href="#">
+                <img src="img/logo-4.png" width="260" height="100">
+              </a>
             </li>
           </ul>
         </div>
@@ -295,7 +300,6 @@
                 <li class="about-item">Автотрейдинг</li>
                 <li class="about-item">ЖелДорЭкспедиция</li>
               </ul>
-              <a class="btn btn-about page-font" href="#">Подробнее о нас</a>
             </div>
             <div class="contacts-wrapper">
               <h2 class="title title-contacts page-font">Контакты</h2>
@@ -303,8 +307,15 @@
               <a id="js-actions-map" class="contacts-actions-link" href="#">
                 <img src="img/map-mini.jpg" width="560" height="222" alt="Найти нас на карте">
               </a>
-              <a class="btn btn-contacts page-font" href="#">Напишите нам</a>
             </div>
+            <ul class="communication-list page-list">
+              <li class="communication-list-item">
+                <a class="btn btn-communication page-font" href="#">Подробнее о нас</a>
+              </li>
+              <li class="communication-list-item">
+                <a class="btn btn-communication btn-contacts page-font" href="#">Напишите нам</a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -326,7 +337,7 @@
               <a class="footer-actions-link footer-actions-compare" href="#">Сравнить</a>
             </li>
             <li>
-              <a class="footer-actions-link footer-actions-order" href="#">Корзина</a>
+              <a class="footer-actions-link footer-actions-cart" href="#">Корзина</a>
             </li>
           </ul>
         </div>
