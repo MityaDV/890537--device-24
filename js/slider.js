@@ -1,7 +1,7 @@
 var buttons = document.querySelectorAll(".slider-button-list .slider-button");
 var slides = document.querySelectorAll(".slider-list .slider-item");
 var slideActive;
-var servicesLink = document.querySelectorAll(".services-item .btn-services");
+var servicesButton = document.querySelectorAll(".services-item .btn-services");
 var servicesContent = document.querySelectorAll(".services-content .services-column");
 var servicesActive;
 
@@ -39,14 +39,13 @@ var onBtnClick = function() {
 	toggleContent(servicesActive);
 };
 
-for (var i = 0; i < servicesLink.length; i++) {
-	servicesLink[i].addEventListener("click", onBtnClick);
-	servicesLink[i].addEventListener("click", function(evt) {
+for (var i = 0; i < servicesButton.length; i++) {
+	servicesButton[i].addEventListener("click", onBtnClick);
+	servicesButton[i].addEventListener("click", function(evt) {
 		evt.preventDefault();
-		servicesLink[i].focus();
+		servicesButton[i].focus();
 		var current = document.getElementsByClassName("services-active");
 		current[0].className = current[0].className.replace(" services-active", "");
 		this.className += " services-active";
 	});
-
 }
