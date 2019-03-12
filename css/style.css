@@ -703,8 +703,6 @@ input[type="radio"].visually-hidden {
   padding: 0 0 25px 0;
 }
 
-
-
 .services-list::after {
   content: "";
   position: absolute;
@@ -751,7 +749,6 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
   background-image: none;
 }
-
 
 .btn-services:active::before,
 .btn-services:focus::before {
