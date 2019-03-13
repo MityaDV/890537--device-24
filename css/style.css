@@ -178,6 +178,15 @@ input[type="radio"].visually-hidden {
   height: 35px;
 }
 
+.header-logo:hover,
+.header-logo:focus {
+	opacity: 0.6;
+}
+
+.header-logo:active {
+	opacity: 0.3;
+}
+
 .header-form {
   flex-basis: 50%;
 }
@@ -391,8 +400,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.header-logo:hover,
-.header-logo:focus,
 .header-actions a:hover,
 .header-actions a:focus,
 .site-navigation-catalog a:hover,
@@ -404,7 +411,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.header-logo img:active,
 .header-actions a:active,
 .site-navigation-catalog a:active,
 .site-navigation a:active,
@@ -530,7 +536,8 @@ input[type="radio"].visually-hidden {
   margin: 0 0 32px 0;
 }
 
-.btn-slider:hover {
+.btn-slider:hover,
+.btn-slider:focus {
   background-color: #f0c52e;
 }
 
@@ -665,8 +672,6 @@ input[type="radio"].visually-hidden {
 .popular-goods-item:hover,
 .popular-goods-item a:focus {
   background-color: #f0c52e;
-
-  outline: none;
 }
 
 .popular-goods-item:active {
@@ -738,8 +743,6 @@ input[type="radio"].visually-hidden {
 .btn-services:hover,
 .btn-services:focus {
   background-color: #f0c52e;
-
-  outline: none;
 }
 
 .btn-services:active,
@@ -1450,15 +1453,18 @@ input[type="radio"].visually-hidden {
   font-family: "open_sansregular", sans-serif;
   letter-spacing: 0;
   color: #000000;
-
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 
   text-transform: none;
 }
 
 .sorting-item a:hover,
 .sorting-item a:focus {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-item a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .sorting-up {
@@ -1490,7 +1496,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.sorting-item a:active,
 .sorting-up:active,
 .sorting-down:active {
   opacity: 1;
@@ -1886,8 +1891,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.btn-catalog-order:hover,
-.btn-catalog-order:focus {
+.btn-catalog-order:hover {
   background-color: #f0c52e;
 }
 
@@ -1960,12 +1964,13 @@ input[type="radio"].visually-hidden {
 .catalog-pagination-back:hover,
 .catalog-pagination-next:hover {
   background-color: #d9d9d9;
+
 }
 
 .catalog-pagination-back:active,
 .catalog-pagination-next:active {
   background-color: #d9d9d9;
-  opacity: 0.08;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-pagination-item:first-child {
@@ -1980,19 +1985,17 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 5px 13px 5px 15px;
 
-  color: #000000;
-
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   ;
 }
 
 .catalog-pagination-item a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .catalog-pagination-item a:active,
 .catalog-pagination-active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 /*стили для модальных окон*/

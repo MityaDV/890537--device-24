@@ -15,7 +15,7 @@
         <div class="navigation-wrapper">
           <div class="header-logo">
             <a href="index.html">
-              <img src="img/logo-device.svg" width="163" height="35" alt="Магазин «Девайс»">
+              <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
             </a>
           </div>
           <form class="header-form" action="https://echo.htmlacademy.ru" method="post">
@@ -93,7 +93,7 @@
               <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-active">
-              Моноподы для селфи
+            	<a href="#">Моноподы для селфи</a>
             </li>
           </ul>
         </div>
@@ -110,8 +110,8 @@
           <div class="filters-color2">
             <div class="column-sorting-title">
               <ul class="sorting-list page-list">
-                <li class="sorting-item filter-title page-font">
-                  Сортировка:
+                <li class="sorting-item">
+                  <h2 class="filter-title page-font">Сортировка:</h2>
                 </li>
                 <li class="sorting-item">
                   <a class="sorting-button" href="#">По цене</a>
@@ -123,10 +123,10 @@
                   <a class="sorting-button" href="#">По популярности</a>
                 </li>
                 <li class="sorting-item">
-                  <button class="button sorting-up" type="button"></button>
+                  <button class="button sorting-up" type="button" aria-label="Прокрутить список товаров вверх"></button>
                 </li>
                 <li class="sorting-item">
-                  <button class="button sorting-down" type="button"></button>
+                  <button class="button sorting-down" type="button" aria-label="Прокрутить список товаров вниз"></button>
                 </li>
               </ul>
             </div>
@@ -139,16 +139,16 @@
                 <fieldset class="options-price">
                   <legend>Cтоимость</legend>
                   <div class="options-price-wrapper">
-                    <div class="options-slider options-left-slider"></div>
+                    <div class="options-slider options-left-slider" tabindex="0"></div>
                     <span class="options-line"></span>
-                    <div class="options-slider options-right-slider"></div>
+                    <div class="options-slider options-right-slider" tabindex="0"></div>
                   </div>
                 </fieldset>
                 <fieldset class="options-colors">
                   <legend>Цвет</legend>
                   <ul class="page-list">
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black " checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black" checked>
                       <label for="filter-black">Черный</label>
                     </li>
                     <li class="filter-item">
@@ -240,13 +240,13 @@
                     <button class="button catalog-pagination-back" type="button">Назад</button>
                   </li>
                   <li class="catalog-pagination-item catalog-pagination-active">
-                    <a href="#">1</a>
+                    <a href="#" aria-label="Страница каталога товаров">1</a>
                   </li>
                   <li class="catalog-pagination-item">
-                    <a href="#">2</a>
+                    <a href="#" aria-label="Страница каталога товаров">2</a>
                   </li>
                   <li class="catalog-pagination-item">
-                    <a href="#">3</a>
+                    <a href="#" aria-label="Страница каталога товаров">3</a>
                   </li>
                   <li class="catalog-pagination-item">
                     <button class="button catalog-pagination-next" type="button">Вперед</button>
@@ -264,7 +264,7 @@
         <div class="footer-content footer-user-actions">
           <div class="footer-logo-active">
             <a href="index.html">
-              <img src="img/logo-device2.svg" width="163" height="35" alt="Магазин «Девайс»">
+              <img src="img/logo-device2.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
             </a>
           </div>
           <ul class="footer-actions page-list">
@@ -336,7 +336,7 @@
               </a>
             </li>
           </ul>
-          <a class="btn-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="btn-html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный HTML и CSS, уровень 1">
             <span class="visually-hidden">HTML Academy</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="35" fill="#ffc600" viewBox="0 0 27 35">
               <image id="logo-html" width="27" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAjCAYAAABl/XGVAAAD1klEQVRIiaWXV4xNURSGPzJ6r8HoD0pi9Oi9RsSL6BM9BAkPiJoQQSI6iRKiBFEePCiParQRzIzOSEgwTESbaKPLmvtvjlPu3OFPTu7Z+6y91tpr/WvtfYv8vIgflYDaQDJQB6jleU/WUxl4DWTreaLfZ3p/qvEbr24ztk8KTGldoGTA/L8jD3gsJ7LN2E+fqm/Ac5/H2fLWefwSqCona3si4Ry295pAklexG3wAekr5C+BHAnt5BzwKzP5BUaC6wn8aKOOM2W6uBMT/D+Zwjh7Tn2+9sLCQLRKRCoXCGLMozALuAkuA+8AEI1lAMgKJGusCpAOrIJ+9KcApYAdwAWgRWBGCgowZ43YC55SDTsBU4BYwAugNlAeuARuBCgENHkQZs/lJQBYwFJgJtAXSfHK2u5bAHGCc5FOjQhtmrBVgfWWblDUF1jlGhcDm1wKNgRMK8xmgWTxj5RWKK6qPgcAQFXIieK5ddQcqApnKcTm31nWQr8AroIoElgGf4hiYpl3fC3yJIUkyS4H3QDWgmNtZMS00Vi0swBDK3w1gOVA68DUWWotSI+C89P8VRmvAJQLLwrEAmA1MB24Dg0KlYk61cwNn7Ks6w1Vgg/IXD5tEpK5i6FHgCFBPaxpo7ri6fp7X2EegiVg1Td1hZBxjVnt91WCNef3ERusue4A7QAdgLNAD+OwP4wfVS0vVy37gpJzwoz4wWEY3iVAbRIzRMtpYhn8fYWF1dlsUHqu2dD2ECG2UeCPCMOVmsyOCQvfGrzjJPyGYp2WAPsAUYD4wCpgBHFN3yQDWRzgciijB3UBrNdmHQGfV4VE9/RWuqPWhiNpZDWAAMEYhfCDipGgcRfW4iPKspzp5rvJjV4Wzyo3R/WZgxd/IC8x42lWu+plDSeVpnmdXdpFZIxJY8hsGtMXqdbVy/tEz/9aOn6idmWeLFbYc7crqqhtwSEXrxxmVzQKfod9wxorr+uVHlhiZKlKkqRQOeuReKLe9VMx+JEt/vrEvQCk14lkRpNmvIj2gehquYt2qot/rLV4hSYfuPen/Ysaa69Arq3in687hR65yZ23osH6nhhWv586yRnqtE7Xw3vVH6ESuofEuta+XAVXRsDvLSmC8JHK0uwP4qH9QobIe910LLGeT45SIQ1HJZWndd51nLvT5CPsXg1i1RaEyXFbIMgKSsaPGZNtrnCbZzDCPwpCpa9tktan2Ous2es46d2e5qu+vJd85zFC8nXlheVgBTNSc5WG7mrHLrx01cwvKbyLGHDqK6sZeB7uHWMgS0lKYrn1JfdLYZf/R7NfGibkL/ALH7fcxn14KxQAAAABJRU5ErkJggg==" />
