@@ -139,10 +139,6 @@ input[type="radio"].visually-hidden {
 
 /*Стили для Хедера*/
 
-.navigation {
-  color: #000000;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -465,8 +461,6 @@ input[type="radio"].visually-hidden {
 .slider-item.slider-item-active {
   display: flex;
 }
-
-
 
 .slider-foto-wrapper {
   z-index: 2;
@@ -794,7 +788,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.services-column h2 {
+.services-column h3 {
   position: absolute;
   top: -25px;
   left: 15px;
@@ -1431,7 +1425,7 @@ input[type="radio"].visually-hidden {
   padding: 0 0 0 58px;
 }
 
-.column-filter-title h2 {
+.column-filter-title h3 {
   padding: 23px 0 23px 4px;
 }
 
@@ -1685,6 +1679,9 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:focus+label::before,
 .filter-input-checkbox:checked:focus+label::after {
   opacity: 0.6;
+	box-shadow:
+		0 0 0 2px #ffffff,
+		0 0 0 3px #0a83f4;
 }
 
 .filter-input-checkbox:checked:hover+label::before {
@@ -1708,8 +1705,8 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 1px;
+  top: 8px;
+  left: 0px;
 
   width: 23px;
   height: 23px;
@@ -1739,6 +1736,9 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:focus+label::after,
 .filter-input-radio:focus {
   opacity: 0.6;
+  box-shadow:
+		0 0 0 2px #ffffff,
+		0 0 0 3px #0a83f4;
 }
 
 .filter-input-radio+label:active::before,
