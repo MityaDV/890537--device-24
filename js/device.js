@@ -4,7 +4,9 @@ var slideActive;
 var servicesButton = document.querySelectorAll(".services-item .btn-services");
 var servicesContent = document.querySelectorAll(".services-content .services-column");
 var servicesActive;
+
 // 
+
 var contacts = document.querySelector(".btn-contacts");
 var letter = document.querySelector(".modal-letter");
 var closeLetter = letter.querySelector(".modal-close");
@@ -15,56 +17,56 @@ var text = letter.querySelector("[name=letter-user]");
 var isStorageSupport = true;
 var storage = "";
 var storageEmail = "";
+
 // 
+
 var info = document.getElementById(["js-actions-map"]);
 var map = document.querySelector(".modal-map");
 var close = map.querySelector(".modal-close");
+
 // 
 
-
 var toggleSlides = function(current) {
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].classList.remove("slider-item-active");
-	}
-	current.classList.add("slider-item-active");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("slider-item-active");
+  }
+  current.classList.add("slider-item-active");
 };
 
 var onButtonClick = function() {
-	slideActive = document.getElementById(this.dataset.slide);
-	toggleSlides(slideActive);
+  slideActive = document.getElementById(this.dataset.slide);
+  toggleSlides(slideActive);
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("slider-button-active");
+  } 
+    this.classList.add("slider-button-active");
 };
 
 for (var i = 0; i < buttons.length; i++) {
-	buttons[i].addEventListener("click", onButtonClick);
-	buttons[i].addEventListener("click", function() {
-		var current = document.getElementsByClassName("slider-button-active");
-		current[0].className = current[0].className.replace(" slider-button-active", "");
-		this.className += " slider-button-active";
-	});
-}
+  buttons[i].addEventListener("click", onButtonClick);
+};
 
 var toggleContent = function(current) {
-	for (var i = 0; i < servicesContent.length; i++) {
-		servicesContent[i].classList.remove("services-active");
-	}
-	current.classList.add("services-active");
+  for (var i = 0; i < servicesContent.length; i++) {
+    servicesContent[i].classList.remove("services-active");
+  }
+  current.classList.add("services-active");
 };
 
 var onBtnClick = function() {
-	servicesActive = document.getElementById(this.dataset.services);
-	toggleContent(servicesActive);
+  servicesActive = document.getElementById(this.dataset.services);
+  toggleContent(servicesActive);
+  for (var i = 0; i < servicesButton.length; i++) {
+    servicesButton[i].classList.remove("btn-services-active");
+  } 
+    this.classList.add("btn-services-active");
 };
 
 for (var i = 0; i < servicesButton.length; i++) {
-	servicesButton[i].addEventListener("click", onBtnClick);
-	servicesButton[i].addEventListener("click", function(evt) {
-		evt.preventDefault();
-		servicesButton[i].focus();
-		var current = document.getElementsByClassName("services-active");
-		current[0].className = current[0].className.replace(" services-active", "");
-		this.className += " services-active";
-	});
+  servicesButton[i].addEventListener("click", onBtnClick);
 }
+
 // 
 
 try {
@@ -113,7 +115,9 @@ document.addEventListener("keyup", function(evt) {
     }
   }
 });
+
 // 
+
 info.addEventListener("click", function(evt) {
   evt.preventDefault();
   map.classList.add("modal-open");
