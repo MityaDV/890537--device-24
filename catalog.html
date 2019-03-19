@@ -6,7 +6,7 @@
     <title>HTML Academy: Девайс-Каталог товаров</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="inner-page">
@@ -149,23 +149,23 @@
                   <legend>Цвет</legend>
                   <ul class="page-list">
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="black" checked>
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-black" type="checkbox" name="filterColor" value="black" checked>
                       <label for="filter-black">Черный</label>
                     </li>
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-white" type="checkbox" name="white">
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-white" type="checkbox" name="filterColor" value="white">
                       <label for="filter-white">Белый</label>
                     </li>
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-blue" type="checkbox" name="blue">
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-blue" type="checkbox" name="filterColor" value="blue">
                       <label for="filter-blue">Синий</label>
                     </li>
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-red" type="checkbox" name="red" checked disabled>
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-red" type="checkbox" name="filterColor" value="red" checked disabled>
                       <label for="filter-red">Красный</label>
                     </li>
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pink" type="checkbox" name="pink" disabled>
+                      <input class="visually-hidden filter-input filter-input-checkbox" id="filter-pink" type="checkbox" name="filterColor" value="pink" disabled>
                       <label for="filter-pink">Розовый</label>
                     </li>
                   </ul>
@@ -174,11 +174,11 @@
                   <legend>Bluetooth</legend>
                   <ul class="page-list">
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-radio" id="filter-yes" type="radio" name="bt-group" checked>
+                      <input class="visually-hidden filter-input filter-input-radio" id="filter-yes" type="radio" name="filterBt" value="yes" checked>
                       <label for="filter-yes">Есть</label>
                     </li>
                     <li class="filter-item">
-                      <input class="visually-hidden filter-input filter-input-radio" id="filter-no" type="radio" name="bt-group">
+                      <input class="visually-hidden filter-input filter-input-radio" id="filter-no" type="radio" name="filterBt" value="no">
                       <label for="filter-no">Нет</label>
                     </li>
                   </ul>

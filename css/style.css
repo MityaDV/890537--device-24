@@ -67,7 +67,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 /*Стили для списков*/
@@ -150,16 +149,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   padding: 43px 60px 40px 60px;
 
   background-color: #f7e296;
 
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -168,12 +168,11 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -19px;
   left: 0;
-
   margin: 0 0 0 60px;
 }
 
 .header-logo a {
-  display: inline-block;
+  display: block;
 }
 
 .header-logo img {
@@ -194,7 +193,7 @@ input[type="radio"].visually-hidden {
   padding: 0 0 30px 0;
 
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+      flex-basis: 50%;
 }
 
 .header-form p {
@@ -382,10 +381,10 @@ input[type="radio"].visually-hidden {
   padding: 0 0 0 15px;
 
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+      flex-basis: 50%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -396,7 +395,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 5px;
 
   -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+      flex-basis: auto;
 }
 
 .site-navigation a {
@@ -404,7 +403,6 @@ input[type="radio"].visually-hidden {
 
   display: block;
 }
-
 .site-navigation-active::after {
   content: "";
   position: absolute;
@@ -526,6 +524,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(3) img {
   width: 526px;
   height: 334px;
+  box-sizing: content;
 }
 
 .slider-item-wrapper {
@@ -780,6 +779,7 @@ input[type="radio"].visually-hidden {
   top: -19px;
 
   display: inline-block;
+  vertical-align: top;
   padding: 0 124px 0 0;
 }
 
@@ -837,24 +837,14 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.services-list > li > .btn-services-active,
-.services-list > li > .btn-services-active.btn-services::before {
-  display: block;
-
-  color: #f7e184;
-
-  background-color: #000000;
-  background-image: none;
-}
-
 .services-column {
   position: relative;
 
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-      flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 0 0 106px;
 }
 
@@ -996,7 +986,7 @@ input[type="radio"].visually-hidden {
   width: 50%;
 
   -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+      flex-basis: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1039,6 +1029,7 @@ input[type="radio"].visually-hidden {
 
 .about-list {
   display: inline-block;
+  vertical-align: top;
   width: 260px;
   margin: 0;
   padding: 36px 36px 54px 36px;
@@ -1900,6 +1891,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 
   display: inline-block;
+  vertical-align: middle;
   width: 23px;
   height: 23px;
 
@@ -1914,6 +1906,7 @@ input[type="radio"].visually-hidden {
   left: 5px;
 
   display: inline-block;
+  vertical-align: middle;
   -webkit-box-shadow: inset 1px -2px 1px 0 #ffffff,
   3px 3px 1px -1px #ffffff;
           box-shadow: inset 1px -2px 1px 0 #ffffff,
@@ -1969,6 +1962,7 @@ input[type="radio"].visually-hidden {
   left: 0;
 
   display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
 
@@ -1983,6 +1977,7 @@ input[type="radio"].visually-hidden {
   left: 7px;
 
   display: inline-block;
+  vertical-align: middle;
   width: 9px;
   height: 9px;
 
@@ -2279,53 +2274,53 @@ input[type="radio"].visually-hidden {
 
 @-webkit-keyframes departure {
   0% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
+    -webkit-transform: translateX(-200%) translateY(-50%);
+            transform: translateX(-200%) translateY(-50%);
   }
 
   70% {
-    -webkit-transform: translate(-30%);
-            transform: translate(-30%);
+    -webkit-transform: translateX(-30%) translateY(-50%);
+            transform: translateX(-30%) translateY(-50%);
   }
 
   90% {
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
+    -webkit-transform: translateX(-70%) translateY(-50%);
+            transform: translateX(-70%) translateY(-50%);
   }
 
   100% {
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
 }
 
 @keyframes departure {
   0% {
-    -webkit-transform: translate(-200%);
-            transform: translate(-200%);
+    -webkit-transform: translateX(-200%) translateY(-50%);
+            transform: translateX(-200%) translateY(-50%);
   }
 
   70% {
-    -webkit-transform: translate(-30%);
-            transform: translate(-30%);
+    -webkit-transform: translateX(-30%) translateY(-50%);
+            transform: translateX(-30%) translateY(-50%);
   }
 
   90% {
-    -webkit-transform: translate(-70%);
-            transform: translate(-70%);
+    -webkit-transform: translateX(-70%) translateY(-50%);
+            transform: translateX(-70%) translateY(-50%);
   }
 
   100% {
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
 }
 
 @-webkit-keyframes turn {
   0%,
   100% {
-    -webkit-transform: rotate(0deg) translate(-50%);
-            transform: rotate(0deg) translate(-50%);
+    -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%);
+            transform: rotate(0deg) translateX(-50%) translateY(-50%);
   }
 
   10%,
@@ -2333,24 +2328,24 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    -webkit-transform: translate(-50%) rotate(-2deg);
-            transform: translate(-50%) rotate(-2deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-2deg);
+            transform: translateX(-50%) translateY(-50%) rotate(-2deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translate(-50%) rotate(2deg);
-            transform: translate(-50%) rotate(2deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(2deg);
+            transform: translateX(-50%) translateY(-50%) rotate(2deg);
   }
 }
 
 @keyframes turn {
   0%,
   100% {
-    -webkit-transform: rotate(0deg) translate(-50%);
-            transform: rotate(0deg) translate(-50%);
+    -webkit-transform: rotate(0deg) translateX(-50%) translateY(-50%);
+            transform: rotate(0deg) translateX(-50%) translateY(-50%);
   }
 
   10%,
@@ -2358,21 +2353,22 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    -webkit-transform: translate(-50%) rotate(-2deg);
-            transform: translate(-50%) rotate(-2deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-2deg);
+            transform: translateX(-50%) translateY(-50%) rotate(-2deg);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translate(-50%) rotate(2deg);
-            transform: translate(-50%) rotate(2deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(2deg);
+            transform: translateX(-50%) translateY(-50%) rotate(2deg);
   }
 }
 
 .modal {
   position: fixed;
+  top: 50%;
   left: 50%;
   z-index: 100;
 
@@ -2383,9 +2379,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
 
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translate(-50%) translateY(-50%);
+      -ms-transform: translate(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 .modal-open {
@@ -2412,15 +2408,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-letter {
-  top: 120px;
-
   padding: 80px 100px;
-}
-
-.modal-map {
-  top: 120px;
-
-  height: 559px;
 }
 
 .modal-map iframe {
@@ -2488,13 +2476,13 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-      flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 0 35px 0;
 
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .letter-form p:first-child {
@@ -2505,7 +2493,7 @@ input[type="radio"].visually-hidden {
   margin: 0 0 40px 0;
 
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
+      flex-basis: 100%;
 }
 
 .letter-form label {
@@ -2534,7 +2522,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 0;
 
   -ms-flex-preferred-size: 155px;
-  flex-basis: 155px;
+      flex-basis: 155px;
 }
 
 .btn-letter-send {
