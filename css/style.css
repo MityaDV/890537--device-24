@@ -947,6 +947,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 0 0 106px;
+  width: 100%
 }
 
 .services-active {
@@ -983,7 +984,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -14px;
-  right: -278px;
+  right: 0;
 
   width: 170px;
   height: 200px;
