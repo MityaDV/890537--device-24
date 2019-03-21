@@ -6,7 +6,7 @@
     <title>HTML Academy: Девайс-Каталог товаров</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="inner-page">
@@ -25,21 +25,21 @@
             </p>
           </form>
           <ul class="header-actions page-list">
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-user" href="profile.html">Валентин Петухов</a>
             </li>
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-enter" href="login.html">Выйти</a>
             </li>
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-compare" href="compare.html">Сравнить</a>
             </li>
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
           <ul class="site-navigation-catalog page-list">
-            <li>
+            <li class="site-navigation-catalog-item">
               <a class="site-navigation-link page-font" href="catalog.html">Каталог товаров</a>
               <ul class="site-navigation-submenu page-list">
                 <li>
@@ -93,7 +93,7 @@
               <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-active">
-              <a href="#">Моноподы для селфи</a>
+              <a>Моноподы для селфи</a>
             </li>
           </ul>
         </div>
@@ -109,26 +109,22 @@
           </div>
           <div class="filters-color2">
             <div class="column-sorting-title">
+              <h3 class="filter-title page-font">Сортировка:</h3>
               <ul class="sorting-list page-list">
-                <li class="sorting-item">
-                  <h3 class="filter-title page-font">Сортировка:</h3>
+                <li class="sorting-item sorting-item-active">
+                  <a href="#">По цене</a>
                 </li>
                 <li class="sorting-item">
-                  <a class="sorting-button" href="#">По цене</a>
+                  <a href="#">По типу</a>
                 </li>
                 <li class="sorting-item">
-                  <a class="sorting-button" href="#">По типу</a>
-                </li>
-                <li class="sorting-item">
-                  <a class="sorting-button" href="#">По популярности</a>
-                </li>
-                <li class="sorting-item">
-                  <button class="sorting-up" type="button" aria-label="Прокрутить список товаров вверх"></button>
-                </li>
-                <li class="sorting-item">
-                  <button class="sorting-down" type="button" aria-label="Прокрутить список товаров вниз"></button>
+                  <a href="#">По популярности</a>
                 </li>
               </ul>
+              <div class="sorting-button">
+                <button class="sorting-up" type="button" aria-label="Прокрутить список товаров вверх"></button>
+                <button class="sorting-down sorting-button-active" type="button" aria-label="Прокрутить список товаров вниз"></button>
+              </div>
             </div>
           </div>
         </div>
@@ -195,7 +191,9 @@
                   <h3 class="visually-hidden title">Карточка товара "Любительская селфи-палка"</h3>
                   <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка.">
                   <ul class="catalog-title-item page-list page-font">
-                    <li class="item-name">Любительская селфи-палка</li>
+                    <li class="item-name">
+                      <a class="catalog-item-name-link" href="product.html">Любительская селфи-палка</a>
+                    </li>
                     <li class="item-price">500 руб.</li>
                   </ul>
                   <div class="catalog-actions">
@@ -207,7 +205,9 @@
                   <h3 class="visually-hidden title">Карточка товара "Профессиональная селфи-палка"</h3>
                   <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка.">
                   <ul class="catalog-title-item page-list page-font">
-                    <li class="item-name">Профессиональная селфи-палка</li>
+                    <li class="item-name">
+                      <a class="catalog-item-name-link" href="product.html">Профессиональная селфи-палка</a>
+                    </li>
                     <li class="item-price">1 500 руб.</li>
                   </ul>
                   <div class="catalog-actions">
@@ -219,7 +219,9 @@
                   <h3 class="visually-hidden title">Карточка товара "Непотопляемая селфи-палка"</h3>
                   <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
                   <ul class="catalog-title-item page-list page-font">
-                    <li class="item-name">Непотопляемая селфи-палка</li>
+                    <li class="item-name">
+                    <a class="catalog-item-name-link" href="product.html">Непотопляемая селфи-палка</a>
+                    </li>
                     <li class="item-price">2 500 руб.</li>
                   </ul>
                   <div class="catalog-actions">
@@ -231,7 +233,9 @@
                   <h3 class="visually-hidden title">Карточка товара "Селфи-палка «Следуй за мной»"</h3>
                   <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                   <ul class="catalog-title-item page-list page-font">
-                    <li class="item-name">Селфи-палка «Следуй за мной»</li>
+                    <li class="item-name">
+                      <a class="catalog-item-name-link" href="product.html">Селфи-палка «Следуй за мной»</a>
+                    </li>
                     <li class="item-price">4 900 руб.</li>
                   </ul>
                   <div class="catalog-actions">
@@ -274,34 +278,34 @@
             </a>
           </div>
           <ul class="footer-actions page-list">
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-user" href="profile.html">Валентин Петухов</a>
             </li>
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-enter" href="login.html">Выйти</a>
             </li>
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-compare" href="compare.html">Сравнить</a>
             </li>
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
         </div>
         <div class="footer-content footer-contacts">
-          <p>г. Москва, ул. Строителей, 15</p>
+          <p class="footer-contacts-address">г. Москва, ул. Строителей, 15</p>
           <ul class="footer-navigation page-list page-font">
-            <li class="footer-navigation-item site-navigation-delivery">
+            <li class="footer-navigation-item footer-navigation-delivery">
               <a href="delivery.html">Доставка</a>
             </li>
-            <li class="footer-navigation-item site-navigation-warranty">
+            <li class="footer-navigation-item footer-navigation-warranty">
               <a href="warranty.html">Гарантия</a>
             </li>
-            <li class="footer-navigation-item site-navigation-contacts">
+            <li class="footer-navigation-item footer-navigation-contacts">
               <a href="contacts.html">Контакты</a>
             </li>
           </ul>
-          <p>Тел.: +7 (495) 495-95-95</p>
+          <p class="footer-contacts-phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer-content footer-copyright">
           <ul class="footer-social page-list">

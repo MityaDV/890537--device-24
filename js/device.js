@@ -44,7 +44,6 @@ for (var i = 0; i < buttons.length; i++) {
 };
 
 var toggleContent = function(currentServices) {
-
   for (var i = 0; i < servicesContent.length; i++) {
     servicesContent[i].classList.remove("services-active");
   }
@@ -101,7 +100,6 @@ form.addEventListener("submit", function(evt) {
     evt.preventDefault();
 
     letter.classList.add("modal-error");
-
   } else {
       if (isStorageSupport) {
         localStorage.setItem("login", login.value.trim());
@@ -124,7 +122,6 @@ document.addEventListener("keyup", function(evt) {
 var toggleMap = function() {
   if (map.classList.contains("modal-open")) {
     map.classList.remove("modal-open");
-
   } else {
       map.classList.add("modal-open");
     }

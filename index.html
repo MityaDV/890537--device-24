@@ -6,7 +6,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -14,7 +14,7 @@
       <nav class="navigation container" aria-label="Главное меню навигации">
         <div class="navigation-wrapper">
           <div class="header-logo">
-            <a>
+            <a href="#">
               <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина «Девайс».">
             </a>
           </div>
@@ -25,18 +25,18 @@
             </p>
           </form>
           <ul class="header-actions page-list">
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-enter" href="login.html">Войти</a>
             </li>
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-compare" href="compare.html">Сравнить</a>
             </li>
-            <li>
+            <li class="header-actions-item">
               <a class="header-actions-link header-actions-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
           <ul class="site-navigation-catalog page-list">
-            <li>
+            <li class="site-navigation-catalog-item">
               <a class="site-navigation-link page-font" href="catalog.html" aria-label="Меню с внутренним списком каталога товаров">Каталог товаров</a>
               <ul class="site-navigation-submenu page-list">
                 <li>
@@ -241,23 +241,17 @@
             <div class="services-column services-active" id="services-1">
               <h3 class="title page-font">Доставка</h3>
               <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              <div class="services-logo logo-delivery">
-                <img src="img/delivery.svg" width="136" height="164" alt="" aria-hidden="true">
-              </div>
+              <div class="services-logo logo-delivery"></div>
             </div>
             <div class="services-column" id="services-2">
               <h3 class="title page-font">Гарантия</h3>
               <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
-              <div class="services-logo logo-warranty">
-                <img src="img/warranty.svg" width="171" height="194" alt="" aria-hidden="true">
-              </div>
+              <div class="services-logo logo-warranty"></div>
             </div>
             <div class="services-column" id="services-3">
               <h3 class="title page-font">Кредит</h3>
               <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-              <div class="services-logo logo-credit">
-                <img src="img/credit.svg" width="156" height="186" alt="" aria-hidden="true">
-              </div>
+              <div class="services-logo logo-credit"></div>
             </div>
           </div>
         </div>
@@ -328,40 +322,40 @@
       <div class="container">
         <div class="footer-content footer-user-actions">
           <div class="footer-logo-active">
-            <a href="#">
+            <a>
               <img src="img/logo-device2.svg" width="163" height="35" alt="Логотип магазина «Девайс».">
             </a>
           </div>
           <ul class="footer-actions page-list">
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-enter" href="login.html">Войти</a>
             </li>
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-compare" href="compare.html">Сравнить</a>
             </li>
-            <li>
+            <li class="footer-actions-item">
               <a class="footer-actions-link footer-actions-cart" href="cart.html">Корзина</a>
             </li>
           </ul>
         </div>
         <div class="footer-content footer-contacts">
-          <p>г. Москва, ул. Строителей, 15</p>
+          <p class="footer-contacts-address">г. Москва, ул. Строителей, 15</p>
           <ul class="footer-navigation page-list page-font">
-            <li class="footer-navigation-item site-navigation-delivery">
+            <li class="footer-navigation-item footer-navigation-delivery">
               <a href="delivery.html">Доставка</a>
             </li>
-            <li class="footer-navigation-item site-navigation-warranty">
+            <li class="footer-navigation-item footer-navigation-warranty">
               <a href="warranty.html">Гарантия</a>
             </li>
-            <li class="footer-navigation-item site-navigation-contacts">
+            <li class="footer-navigation-item footer-navigation-contacts">
               <a href="contacts.html">Контакты</a>
             </li>
           </ul>
-          <p>Тел.: +7 (495) 495-95-95</p>
+          <p class="footer-contacts-phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer-content footer-copyright">
           <ul class="footer-social page-list">
-            <li>
+            <li class="footer-social-item">
               <a class="social-button" href="#" aria-label="Магазин Девайс на Фейсбуке">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
@@ -373,7 +367,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer-social-item">
               <a class="social-button" href="#" aria-label="Магазин Девайс в Инстаграмме">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
@@ -385,7 +379,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="footer-social-item">
               <a class="social-button" href="#" aria-label="Магазин Девайс в Твиттере">
                 <span class="visually-hidden">Твиттер</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
