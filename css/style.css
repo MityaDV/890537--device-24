@@ -948,6 +948,10 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   padding: 0 0 0 106px;
   width: 100%
+<<<<<<< HEAD
+  background:lightgreen;
+=======
+>>>>>>> dcdff8868c6ff28fce74d13951c864e061a75711
 }
 
 .services-active {
