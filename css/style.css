@@ -608,23 +608,6 @@ input[type="radio"].visually-hidden {
   padding: 0 15px 0 0;
 }
 
-.slider-item:first-child img {
-  width: 384px;
-  height: 486px;
-}
-
-.slider-item:nth-child(2) img {
-  width: 345px;
-  height: 485px;
-}
-
-.slider-item:nth-child(3) img {
-  -webkit-box-sizing: content;
-          box-sizing: content;
-  width: 526px;
-  height: 334px;
-}
-
 .slider-item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -947,7 +930,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 0 0 106px;
-  width: 100%
+  width: 100%;
   background:#e5e5e5;
 }
 
